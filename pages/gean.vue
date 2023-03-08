@@ -6,35 +6,7 @@
       <Hero />
     </div>
     <main>
-      <div
-        id="who-we-are"
-        class="container-fluid programas col-xxl-8 py-2 py-lg-0"
-      >
-        <div class="row flex-lg-row align-items-stretch h-100">
-          <div
-            class="col-12 col-lg-6 py-lg-5 programasAmbientais d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="~/assets/programas-ambientais.jpg"
-              class="d-block mx-auto my-auto w-75 mw-100"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="col-12 col-lg-6 olaPrograma align-items-start justify-content-center align-items-lg-center d-flex"
-          >
-            <div class="p-3 p-lg-5 text-center text-lg-left">
-              <h1 class="display-5 fw-bold lh-1 mb-4">
-                {{ $store.state.contentSite.home.about.title }}
-              </h1>
-              <p
-                class="lead py-lg-4"
-                v-html="$store.state.contentSite.home.about.desc"
-              ></p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Intro />
       <div id="environmental-programs" class="steps container-fluid">
         <div
           class="container h-100 justify-content-center align-items-center d-flex"
@@ -325,10 +297,12 @@
 
 <script>
 import Hero from '~/components/sections/Hero.vue'
+import Intro from '~/components/sections/Intro.vue'
 
 export default {
   components: {
     Hero,
+    Intro,
   },
   data() {
     return {
