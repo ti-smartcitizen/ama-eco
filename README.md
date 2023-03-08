@@ -9,8 +9,8 @@ Banner
 BtnUp
 
 Gean
-- Hero
-Programs
+Hero OK
+- Programs
 Intro
 ODS
 Social
