@@ -1,13 +1,6 @@
 <template>
   <header
-    class="
-      d-flex
-      flex-wrap
-      align-items-center
-      justify-content-center justify-content-xl-between
-      h-100
-      w-100
-    "
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-between h-100 w-100"
   >
     <b-navbar
       toggleable="xl"
@@ -54,32 +47,6 @@
         </b-collapse>
       </b-container>
     </b-navbar>
-
-    <b-carousel
-      v-if="slides"
-      id="carousel-fade"
-      class="carousel-header w-100 d-none d-lg-block"
-      fade
-      indicators
-    >
-      <b-carousel-slide
-        v-for="(item, id) of $store.state.contentHeader.carousel"
-        :key="id + 'carousel'"
-        :img-src="require(`~/assets/${item}`)"
-      ></b-carousel-slide>
-    </b-carousel>
-    <b-carousel
-      v-if="slides"
-      id="carousel-fade"
-      class="carousel-header d-block d-lg-none"
-      fade
-    >
-      <b-carousel-slide
-        v-for="(item, id) of $store.state.contentHeader.carousel_mobile"
-        :key="id + 'carousel_mobile'"
-        :img-src="require(`~/assets/${item}`)"
-      ></b-carousel-slide>
-    </b-carousel>
   </header>
 </template>
 

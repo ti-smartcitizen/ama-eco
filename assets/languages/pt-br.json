@@ -28,18 +28,20 @@
     ],
     "downloadNow": "Baixe Agora",
     "carousel": [
-      "slide_onu.png",
-      "slide-01.jpg",
-      "slide-02.jpg",
+      "slide-01.png",
+      "slide-02.png",
+      "slide-03.png",
+      "slide-04.png",
       "slide-05.png",
-      "slide-04.jpg"
+      "slide-06.png"
     ],
     "carousel_mobile": [
-      "slide_mobile_onu.png",
-      "slide-mobile-01.jpg",
-      "slide-mobile-02.jpg",
+      "slide-mobile-01.png",
+      "slide-mobile-02.png",
+      "slide-mobile-03.png",
+      "slide-mobile-04.png",
       "slide-mobile-05.png",
-      "slide-mobile-04.jpg"
+      "slide-mobile-06.png"
     ]
   },
   "footer": {
