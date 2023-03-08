@@ -26,22 +26,46 @@
         </div>
         <div class="redes justify-content-center col-12 col-xl-3">
           <div class="d-none d-xl-flex justify-content-center social">
-            <a class="ml-3" href="">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCOybdqZCXnBJ-EpmmSdWMiw"
+              class="ml-3"
+            >
               <img src="../assets/rede-social/youtube-green.svg" alt="" />
             </a>
-            <a class="ml-3" href="">
+            <a
+              class="ml-3"
+              target="_blank"
+              href="https://www.tiktok.com/@agentesdomeioambiente?is_from_webapp=1&sender_device=pc"
+            >
               <img src="../assets/rede-social/tiktok-green.svg" alt="" />
             </a>
-            <a class="ml-3" href="">
+            <a
+              class="ml-3"
+              target="_blank"
+              href="https://www.facebook.com/agentedomeioambiente"
+            >
               <img src="../assets/rede-social/facebook-green.svg" alt="" />
             </a>
-            <a class="ml-3" href="">
+            <a
+              class="ml-3"
+              target="_blank"
+              href="https://www.instagram.com/agentesdomeioambiente/"
+            >
               <img src="../assets/rede-social/instagram-green.svg" alt="" />
             </a>
-            <a class="ml-3" href="">
+            <a
+              class="ml-3"
+              target="_blank"
+              href="https://www.linkedin.com/company/agentesdomeioambiente"
+            >
               <img src="../assets/rede-social/linkedin-green.svg" alt="" />
             </a>
-            <a class="ml-3" href="">
+            <a
+              class="ml-3"
+              href="https://twitter.com/cidade_ama"
+              target="_blank"
+            >
               <img src="../assets/rede-social/twitter-green.svg" alt="" />
             </a>
           </div>
