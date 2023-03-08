@@ -4,7 +4,6 @@
 // @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @media (min-width: 1200px) {
-
   .container,
   .container-sm,
   .container-md,
@@ -43,6 +42,7 @@ $padding-button: 16px 32px 16px 32px;
 $sans-serif: 'Exo 2', sans-serif;
 //$serif: 'Roboto Slab', sans-serif;
 $serif: 'Poppins', sans-serif;
+$inter: 'Inter', sans-serif;
 $light-weight: 100;
 $regular-weight: 400;
 $medium-weight: 500;
@@ -74,15 +74,7 @@ $spaceUnit: 4px;
   margin-bottom: calc(4 * #{$spaceUnit}) !important;
 }
 
-@media (max-width: 768px) {
-  header .carousel .carousel-item img {
-    height: initial !important;
-    max-height: initial !important;
-  }
-}
-
 @media (max-height: 768px) {
-
   .steps,
   .programas,
   .como-funciona {
@@ -105,9 +97,19 @@ $spaceUnit: 4px;
     background: #fff !important;
   }
 
-  header .carousel .carousel-item img {
-    height: calc(100vh - 82px);
-    max-height: initial !important;
+  .programas {
+    img {
+      margin-top: 20px !important;
+    }
+
+    h1 {
+      font-size: 35px !important;
+      line-height: initial !important;
+    }
+
+    p {
+      font-size: 18px !important;
+    }
   }
 
   .carousel-cards {
@@ -203,67 +205,6 @@ $spaceUnit: 4px;
 }
 
 /* FIM MOBILE */
-
-header {
-  nav {
-    // position: absolute;
-    // height: 120px;
-    z-index: 600;
-    background: #fff;
-    padding: 1rem !important;
-
-    .navbar-brand {
-      img {
-        height: 60px;
-      }
-    }
-
-    .hamburguer {
-      border: 0;
-      padding: 0;
-      font-weight: bold;
-      position: relative;
-      font-size: initial !important;
-
-      img {
-        height: 20px;
-      }
-    }
-
-    ul {
-      li {
-        a {
-          color: #131e3b !important;
-          font-family: $serif;
-          font-style: normal;
-          font-weight: 500;
-          padding: 0.5rem 1rem !important;
-          font-size: 16px;
-
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-      }
-    }
-  }
-
-  .carousel {
-    // margin-top: -86px;
-    width: 100%;
-    overflow: hidden;
-
-    .carousel-item {
-      height: 100%;
-
-      img {
-        display: block;
-        object-fit: cover;
-        max-height: calc(100vh - 96px);
-      }
-    }
-  }
-}
 
 main {
   background: #f8f8f8;
@@ -543,79 +484,6 @@ section {
     font-size: 18px;
     line-height: 30px;
     color: #252528;
-  }
-}
-
-footer {
-  background: $azulAma;
-  color: #fff;
-
-  hr {
-    background: #fff;
-  }
-
-  h1 {
-    font-size: 17px;
-    margin-top: 20px;
-
-    a {
-      text-decoration: none;
-      color: $verdeAma;
-
-      &:hover {
-        color: #fff;
-      }
-    }
-  }
-
-  h3 {
-    margin-top: 30px;
-    font-size: 14px;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-
-    li {
-      font-size: 14px;
-      list-style: none;
-
-      a {
-        color: #fff;
-
-        &:hover {
-          opacity: 0.6;
-          color: #fff;
-        }
-      }
-    }
-  }
-
-  p {
-    a {
-      color: #fff;
-
-      &:hover {
-        opacity: 0.6;
-        color: #fff;
-      }
-    }
-  }
-
-  .redes {
-    li {
-      margin: 5px;
-      font-size: 20px;
-
-      a {
-        color: $verdeAma;
-
-        &:hover {
-          opacity: 0.6;
-        }
-      }
-    }
   }
 }
 
@@ -921,9 +789,11 @@ footer {
 .download {
   .bgdownload {
     background: rgb(71, 197, 136);
-    background: linear-gradient(0deg,
-        rgba(71, 197, 136, 1) 0%,
-        rgba(76, 193, 99, 1) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(71, 197, 136, 1) 0%,
+      rgba(76, 193, 99, 1) 100%
+    );
   }
 
   h1 {

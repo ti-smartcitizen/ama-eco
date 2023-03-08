@@ -38,6 +38,8 @@ export default {
   css: [
     '~/assets/css/base.css',
     '~/assets/css/global.scss',
+    '~/assets/css/header.scss',
+    '~/assets/css/footer.scss',
     '~/assets/css/hero.scss',
   ],
 
