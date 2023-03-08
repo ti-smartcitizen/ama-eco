@@ -28,18 +28,21 @@
     ],
     "downloadNow": "Download Now",
     "carousel": [
-      "en_US/slide_onu.png",
-      "en_US/slide-01.jpg",
-      "en_US/slide-02.jpg",
+      "en_US/slide-01.png",
+      "en_US/slide-02.png",
+      "en_US/slide-03.png",
+      "en_US/slide-04.png",
       "en_US/slide-05.png",
-      "en_US/slide-04.jpg"
+      "en_US/slide-06.png"
+
     ],
     "carousel_mobile": [
-      "en_US/slide_mobile_onu.png",
-      "en_US/slide-mobile-01.jpg",
-      "en_US/slide-mobile-02.jpg",
+      "en_US/slide-mobile-01.png",
+      "en_US/slide-mobile-02.png",
+      "en_US/slide-mobile-03.png",
+      "en_US/slide-mobile-04.png",
       "en_US/slide-mobile-05.png",
-      "en_US/slide-mobile-04.jpg"
+      "en_US/slide-mobile-06.png"
     ]
   },
   "footer": {

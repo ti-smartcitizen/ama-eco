@@ -34,7 +34,7 @@ export default {
   css: [
     '~/assets/css/base.css',
     '~/assets/css/global.scss',
-    '~/assets/css/over.scss',
+    '~/assets/css/hero.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
