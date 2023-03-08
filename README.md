@@ -9,7 +9,7 @@ Banner
 BtnUp
 
 Gean
-Hero
+- Hero
 Programs
 Intro
 ODS

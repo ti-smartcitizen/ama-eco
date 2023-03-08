@@ -1,0 +1,113 @@
+/* V A R I A B L E S */
+
+$verdeAma: #8acc0d;
+$azulAma: #2157cc;
+$cinzaAma: #606060;
+$cinzaAma2: #f6f6f6;
+
+/* Colors */
+$primary-color: #eab818;
+$secondary-color: #5f716b;
+$secondary-dark-color: #38433f;
+$tertiary-color: #8fb1a7;
+$light-color: #fbf8f8;
+$dark-color: #333735;
+$light-grey: #e0e1e1;
+$gradientGreenBottom: #00cc7a;
+$gradientGreenTop: #00d857;
+$colorFonte: #00ce73;
+
+/* Spacing */
+$spaceUnit: 4px;
+
+/* Button */
+$padding-button: 16px 32px 16px 32px;
+
+/* Typgraphy */
+$sans-serif: 'Exo 2', sans-serif;
+//$serif: 'Roboto Slab', sans-serif;
+$serif: 'Poppins', sans-serif;
+$inter: 'Inter', sans-serif;
+$light-weight: 100;
+$regular-weight: 400;
+$medium-weight: 500;
+$bold-weight: 700;
+$h1size: 48px;
+$h2size: 40px;
+$h3size: 32px;
+$h4size: 24px;
+$h5size: 20px;
+$h6size: 16px;
+$body-type: 16px;
+$body-large-type: 18px;
+$body-small-type: 14px;
+$caption: 12px;
+$lineHeight120: 120%;
+$lineHeight130: 130%;
+$lineHeight140: 140%;
+$lineHeight150: 150%;
+$lineHeight180: 180%;
+$lineHeight200: 200%;
+
+//Shadow
+$cards-shadow: 1px 55px 80px -40px rgba(56, 67, 63, 0.1);
+$img-shadow: 1px 55px 80px -40px rgba(56, 67, 63, 0.45);
+
+$spaceUnit: 4px;
+
+footer {
+  font-family: $inter;
+  background: $azulAma;
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: $verdeAma;
+    }
+  }
+  .links {
+    h1 {
+      font-size: 16px;
+      color: #fff;
+    }
+    h1:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  .descricao {
+    font-family: $inter;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .redes {
+    .social {
+      img {
+        svg {
+          fill: $verdeAma;
+        }
+      }
+    }
+    li {
+      margin: 5px;
+      font-size: 20px;
+      a {
+        color: $verdeAma;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .endereco {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .termos {
+    text-decoration: underline !important;
+  }
+}

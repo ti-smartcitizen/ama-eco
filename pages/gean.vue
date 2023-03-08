@@ -2,7 +2,8 @@
 <template>
   <div>
     <div>
-      <Header :slides="true" />
+      <Header />
+      <Hero />
     </div>
     <main>
       <div
@@ -323,7 +324,12 @@
 </template>
 
 <script>
+import Hero from '~/components/sections/Hero.vue'
+
 export default {
+  components: {
+    Hero,
+  },
   data() {
     return {
       posts: [],
