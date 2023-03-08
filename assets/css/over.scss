@@ -1,0 +1,28 @@
+#carousel-fade___BV_indicators_ {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #fff !important;
+}
+
+#carousel-fade___BV_indicator_1_,
+#carousel-fade___BV_indicator_2_,
+#carousel-fade___BV_indicator_3_,
+#carousel-fade___BV_indicator_4_,
+#carousel-fade___BV_indicator_5_,
+#carousel-fade___BV_indicator_6_,
+#carousel-fade___BV_indicator_7_ {
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #B0B4BD !important;
+  margin-right: 8px !important;
+}
+
+.active {
+  background-color: #131E3B !important;
+}
