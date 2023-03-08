@@ -1,0 +1,13 @@
+{
+  "stylelint.validate": [
+    "scss"
+  ],
+  "eslint.validate": [
+    "javascript, html"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true
+}

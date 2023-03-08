@@ -1,0 +1,171 @@
+{
+  "header": {
+    "menu": [
+      {
+        "link": "/#who-we-are",
+        "desc": "Quem somos"
+      },
+      {
+        "link": "/#environmental-programs",
+        "desc": "Programas Ambientais"
+      },
+      {
+        "link": "/#our-app",
+        "desc": "Nosso APP"
+      },
+      {
+        "link": "/#blog",
+        "desc": "Blog"
+      },
+      {
+        "link": "/#where-we-are",
+        "desc": "Onde estamos"
+      },
+      {
+        "link": "/contact",
+        "desc": "Contato"
+      }
+    ],
+    "downloadNow": "Baixe Agora",
+    "carousel": [
+      "slide_onu.png",
+      "slide-01.jpg",
+      "slide-02.jpg",
+      "slide-05.png",
+      "slide-04.jpg"
+    ],
+    "carousel_mobile": [
+      "slide_mobile_onu.png",
+      "slide-mobile-01.jpg",
+      "slide-mobile-02.jpg",
+      "slide-mobile-05.png",
+      "slide-mobile-04.jpg"
+    ]
+  },
+  "footer": {
+    "contact": {
+      "description": "Somos uma rede social de moradores que realizam tarefas, pesquisas e ações ambientais remuneradas que impactam na qualidade de vida das nossas famílias, vizinhanças e cidades onde vivemos.",
+      "terms": "Termos de uso / Política de privacidade"
+    }
+  },
+  "home": {
+    "title": "",
+    "about": {
+      "title": "Olá, somos o ama!",
+      "desc": "Uma rede social que conecta pessoas interessadas no compromisso global de desenvolvimento sustentável. Criamos atividades remuneradas para incentivar novos hábitos, contribuir para a educação socioambiental e gerar dados relevantes para as cidades.<br /><br /><strong>Um ciclo positivo que gera benefícios para o planeta e para você.</strong><br /><br /><strong>Vem com a gente!</strong>"
+    },
+    "cards": [
+      {
+        "img": "inspira-educa-engaja.png",
+        "title": "Inspira, educa<br /> e engaja",
+        "text": "Organizamos a cidade em microáreas urbanas. Estabelecemos lideranças locais, que estimulam bons hábitos relativos à limpeza, saúde e educação ambiental."
+      },
+      {
+        "img": "tarefas-ods.png",
+        "title": "Tarefas<br />ODS",
+        "text": " Atividades simples de educação ambiental alinhadas aos Objetivos do Desenvolvimento Sustentável da ONU, Agenda 2030."
+      },
+      {
+        "img": "cashback-sustentavel.png",
+        "title": "Cashback<br />Sustentável",
+        "text": "Todas nossas atividades geram pontos e ganhos em dinheiro para estimular a prática ambiental."
+      },
+      {
+        "img": "ranking-da-sustentabilidade.png",
+        "title": "Ranking da<br />Sustentabilidade",
+        "text": "Cada tarefa, ação ou pesquisa concluída também te ajuda a crescer de nível dentro da plataforma."
+      },
+      {
+        "img": "rede-social-de-vizinhos.png",
+        "title": "Redes social<br />de vizinhos",
+        "text": "Conectamos pessoas da comunidade local para que compartilhem suas conquistas sustentáveis, incentivem mais vizinhos e divulguem seus produtos e serviços."
+      },
+      {
+        "img": "logistica-reversa.png",
+        "title": "Logística<br />Reversa",
+        "text": "Ao estimular a separação dos resíduos e a entrega voluntária remunerada nos pontos de coleta, asseguramos a correta destinação dos materiais recicláveis."
+      }
+    ],
+    "about_app": {
+      "title": "Como funciona nosso APP?",
+      "create_account": "<span>Crie sua</span><br /><span>conta <strong>ama</strong></span>",
+      "free_download": "Baixe gratuitamente o app nas lojas Apple Store ou Google Play.",
+      "join_search": "Participe das nossas pesquisas e tarefas",
+      "remunerated_job": "Todas as tarefas são remuneradas, basta seguir as orientações do app.",
+      "get_cash": "Cashback Sustentável",
+      "acumulate_points": "Você pode usar seu cashback no marketplace ama, pagar ou receber pagamentos de amigos, ou transferir para uma conta externa.",
+      "download_now": "Baixe Agora"
+    },
+    "jobs_ods": {
+      "title": "Tarefas ODS",
+      "sub_title": "Nossa solução está em educar, conectar e recompensar pessoas para que colaborem na gestão dos problemas ambientais urbanos.",
+      "description": "Quanto maior o número de pessoas, mais questões para solucionar. Ao apoiar as cidades na implementação da Agenda 2030 em nível local, o AMA cumpre papel fundamental na municipalização dos ODS através de tarefas, pesquisas e ações ambientais voltadas à população."
+    },
+    "blog": {
+      "title": "Blog do ama",
+      "read_more": "leia mais",
+      "most_posts": "Veja mais posts"
+    },
+    "localization": {
+      "title": "onde estamos",
+      "sub_title": "Veja no mapa onde multiplicamos <br />comportamentos sustentáveis."
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "sub_title": "O que você tem a dizer é muito importante para nós. Para que possamos melhor atendê-lo, preencha corretamente o formulário adequado à sua solicitação.",
+    "name": "Nome",
+    "phone": "Telefone",
+    "mail": "E-mail",
+    "subject": "Assunto",
+    "contact_us": "Fale conosco",
+    "subjects_list": [
+      {
+        "value": null,
+        "text": "Selecione um assunto",
+        "disabled": true
+      },
+      {
+        "value": 1,
+        "text": "Quero ser Empreendedor"
+      },
+      {
+        "value": 2,
+        "text": "Quero ser parceiro"
+      },
+      {
+        "value": 3,
+        "text": "Comunicação e imprensa"
+      },
+      {
+        "value": 4,
+        "text": "Canal de denúncias"
+      },
+      {
+        "value": 5,
+        "text": "Sugestão, dúvida ou reclamação"
+      },
+      {
+        "value": 6,
+        "text": "Outros"
+      }
+    ],
+    "errors": {
+      "name": "Verifique seu nome.",
+      "phone": "Verifique seu telefone",
+      "mail": "Verifique seu e-mail",
+      "subject": "Selecione ao menos um assunto",
+      "message": "Descreva um texto com no minimo 120 caracteres."
+    },
+    "message": "Mensagem",
+    "send": "Enviar",
+    "msgResponse": "Mensagem enviado com sucesso!"
+  },
+  "download": {
+    "title": "Baixe agora o <strong>ama</strong> no seu smartphone",
+    "app_ama": "App ama",
+    "app_ama_desc": "Baixe o app gratuitamente e torne-se<br /> um <strong>Agente do Meio Ambiente</strong>",
+    "app_empreendedor": "ama Empreendedor",
+    "app_empreendedor_desc": "Baixe o app gratuitamente e torne-se<br /> um <strong>ama Empreendedor</strong>"
+  }
+}

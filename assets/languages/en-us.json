@@ -1,0 +1,171 @@
+{
+  "header": {
+    "menu": [
+      {
+        "link": "/#who-we-are",
+        "desc": "Who We Are"
+      },
+      {
+        "link": "/#environmental-programs",
+        "desc": "Environmental Programs"
+      },
+      {
+        "link": "/#our-app",
+        "desc": "Our App"
+      },
+      {
+        "link": "/#blog",
+        "desc": "Blog"
+      },
+      {
+        "link": "/#where-we-are",
+        "desc": "Where We Are"
+      },
+      {
+        "link": "/contact",
+        "desc": "Contact"
+      }
+    ],
+    "downloadNow": "Download Now",
+    "carousel": [
+      "en_US/slide_onu.png",
+      "en_US/slide-01.jpg",
+      "en_US/slide-02.jpg",
+      "en_US/slide-05.png",
+      "en_US/slide-04.jpg"
+    ],
+    "carousel_mobile": [
+      "en_US/slide_mobile_onu.png",
+      "en_US/slide-mobile-01.jpg",
+      "en_US/slide-mobile-02.jpg",
+      "en_US/slide-mobile-05.png",
+      "en_US/slide-mobile-04.jpg"
+    ]
+  },
+  "footer": {
+    "contact": {
+      "description": "We are a social network committed to the conservation and sustainability of our urban environment, engaging together with neighbors in environmental actions that positively impacts our homes, communities and cities living standards.",
+      "terms": "Terms of Service / Privacy Policy"
+    }
+  },
+  "home": {
+    "title": "",
+    "about": {
+      "title": "Hello, we are ama!",
+      "desc": "A social network that connects citizens interested in the global sustainable development agenda. We create remunerable activities to encourage new habits, contribute to a social environmental education, and generate relevant data for cities.<br /><br /><strong>A positive cycle which benefits you and the planet.</strong><br /><br /><strong>Join us!</strong>"
+    },
+    "cards": [
+      {
+        "img": "inspira-educa-engaja.png",
+        "title": "To Inspire, educate,<br /> and engage",
+        "text": "We organize the city into micro urban areas, establishing local leaders who promote healthy behaviors related to cleaning maintenance, health, and environmental education"
+      },
+      {
+        "img": "tarefas-ods.png",
+        "title": "SDG <br />tasks",
+        "text": "Simple environmental education activities, aligned with the UN’s Sustainable Development Goals, 2030 agenda."
+      },
+      {
+        "img": "cashback-sustentavel.png",
+        "title": "Cashback<br />Sustainable",
+        "text": "Our activities generate points and cash earnings to encourage environmental practices."
+      },
+      {
+        "img": "ranking-da-sustentabilidade.png",
+        "title": "Sustainability <br />Ranking",
+        "text": "Each completed task, action or research helps you grow your Environmental Id and level up in our platform."
+      },
+      {
+        "img": "rede-social-de-vizinhos.png",
+        "title": "A social network <br />of neighbors",
+        "text": "We connect folks in local communities so they can share their achievements, encourage neighbors, and promote their products and services."
+      },
+      {
+        "img": "logistica-reversa.png",
+        "title": "Reverse<br />Logistics",
+        "text": "We promote waste separation and voluntary disposal in collect points, ensuring the correct destination of recyclables."
+      }
+    ],
+    "about_app": {
+      "title": "How does it work?",
+      "create_account": "<span>Create your <br /><strong>ama</strong> </span><span>account </span>",
+      "free_download": "Download our app for free from Google Play and Apple’s App Store.",
+      "join_search": "Participate in our research, actions, and tasks",
+      "remunerated_job": "Our activities can earn you cashback, simply follow orientations in the app.",
+      "get_cash": "<span>Cashback <br />Sustainable</span>",
+      "acumulate_points": "You can use it in the app’s marketplace, pay or receive payments from friends, or transfer out.",
+      "download_now": "Download Now"
+    },
+    "jobs_ods": {
+      "title": "SDG TASKS",
+      "sub_title": "Our goal is to educate, connect and reward people to collaborate to the management of urban environmental issues",
+      "description": "The greater the number of people, the more issues to tackle. By supporting cities in the implementation of the 2030 Agenda at the micro level, AMA plays a fundamental role in the municipalization of the SDGs through tasks, research and environmental actions designed for the population."
+    },
+    "blog": {
+      "title": "ama blog",
+      "read_more": "Learn More",
+      "most_posts": "See more"
+    },
+    "localization": {
+      "title": "where we are",
+      "sub_title": "Our presence grows together <br />with environmental awareness."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "sub_title": "Send your message and we will get back to you soon!",
+    "name": "Name",
+    "phone": "Phone Number",
+    "mail": "E-Mail",
+    "subject": "Subject",
+    "contact_us": "Contact us",
+    "subjects_list": [
+      {
+        "value": null,
+        "text": "Select your subject",
+        "disabled": true
+      },
+      {
+        "value": 1,
+        "text": "I want to be an ama entrepreneur"
+      },
+      {
+        "value": 2,
+        "text": "I want to be a partner"
+      },
+      {
+        "value": 3,
+        "text": "communication & press"
+      },
+      {
+        "value": 4,
+        "text": "reporting channel"
+      },
+      {
+        "value": 5,
+        "text": "suggestions, doubts"
+      },
+      {
+        "value": 6,
+        "text": "others"
+      }
+    ],
+    "errors": {
+      "name": "Check your name.",
+      "phone": "Check your phone",
+      "mail": "Check your e-mail",
+      "subject": "Select at least one subject",
+      "message": "Describe a text of at least 120 characters."
+    },
+    "message": "Message",
+    "send": "Send",
+    "msgResponse": "Message sent successfully!"
+  },
+  "download": {
+    "title": "Download <strong>ama</strong> to your smartphone now",
+    "app_ama": "App ama",
+    "app_ama_desc": "Download the app for free <br />and become an <strong>Environmental Agent</strong>",
+    "app_empreendedor": "ama Entrepreneur",
+    "app_empreendedor_desc": "Download the app for free <br />and become a <strong>ama Entrepreneur</strong>"
+  }
+}
