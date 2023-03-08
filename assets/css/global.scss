@@ -42,6 +42,7 @@ $padding-button: 16px 32px 16px 32px;
 $sans-serif: 'Exo 2', sans-serif;
 //$serif: 'Roboto Slab', sans-serif;
 $serif: 'Poppins', sans-serif;
+$inter: 'Inter', sans-serif;
 $light-weight: 100;
 $regular-weight: 400;
 $medium-weight: 500;
@@ -490,6 +491,7 @@ section {
 }
 
 footer {
+  font-family: $inter;
   background: $azulAma;
   color: #fff;
   hr {
@@ -500,7 +502,7 @@ footer {
     margin-top: 20px;
     a {
       text-decoration: none;
-      color: $verdeAma;
+      color: #fff;
       &:hover {
         color: #fff;
       }
@@ -534,6 +536,14 @@ footer {
       }
     }
   }
+  .links {
+    h1 {
+      font-size: 16px;
+    }
+  }
+  .descricao {
+    font-size: 14px;
+  }
   .redes {
     li {
       margin: 5px;
@@ -545,6 +555,11 @@ footer {
         }
       }
     }
+  }
+
+  .endereco {
+    font-weight: 500;
+    font-size: 14px;
   }
 }
 

@@ -2,19 +2,14 @@
   <footer id="contato" class="px-3 py-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-xl-3">
+        <div class="descricao col-12 col-xl-3">
           <img src="~/assets/logo-rodape.png" class="logoFooter" width="234" />
           <p class="my-3">
             {{ $store.state.contentFooter.contact.description }}
           </p>
         </div>
         <div
-          class="
-            col-12 col-xl-3
-            d-flex
-            justify-content-xl-center
-            align-items-xl-center
-          "
+          class="links col-12 col-xl-3 d-flex justify-content-xl-center align-items-xl-center"
         >
           <div class="">
             <h1
@@ -80,10 +75,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-xl-3">
-          <h3>
-            Smart Citizen Desenvolvimento e Licenciamento de Software Ltda.
-          </h3>
+        <div class="endereco col-12 col-xl-3">
+          botar logo aqui
           <p class="py-3">
             Rua Bruno Filgueira, 2434 CEP 80.710-530<br />Bigorrilho - Curitiba
             - Paraná - Brasil<br /><a
