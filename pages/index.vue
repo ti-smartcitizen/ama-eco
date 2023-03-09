@@ -36,55 +36,5 @@ export default {
     Social,
     Blog,
   },
-  data() {
-    return {
-      posts: [],
-    }
-  },
-  beforeMount() {
-    this.$axios
-      .$get('https://blog.cidadeama.com.br/wp-json/wp/v2/posts')
-      .then((res) => {
-        this.posts.push({
-          ...res[0],
-          categoria: null,
-          thumb: null,
-        })
-        this.posts.push({
-          ...res[1],
-          categoria: null,
-          thumb: null,
-        })
-        this.getCategoriaPost(res[0].categories[0], 0)
-        this.getThumbPost(res[0].featured_media, 0)
-        this.getCategoriaPost(res[1].categories[0], 1)
-        this.getThumbPost(res[1].featured_media, 1)
-      })
-  },
-  methods: {
-    async getCategoriaPost(id, key) {
-      await this.$axios
-        .get('https://blog.cidadeama.com.br/wp-json/wp/v2/categories/' + id)
-        .then((resposta) => {
-          this.posts[key].categoria = resposta.data.name
-        })
-    },
-    async getThumbPost(id, key) {
-      await this.$axios
-        .get('https://blog.cidadeama.com.br/wp-json/wp/v2/media/' + id)
-        .then((resposta) => {
-          this.posts[key].thumb = resposta.data.source_url
-        })
-    },
-    dataAtualFormatada(valor) {
-      const data = new Date(valor)
-      const dia = data.getDate().toString()
-      const diaF = dia.length === 1 ? '0' + dia : dia
-      const mes = (data.getMonth() + 1).toString() // +1 pois no getMonth Janeiro começa com zero.
-      const mesF = mes.length === 1 ? '0' + mes : mes
-      const anoF = data.getFullYear()
-      return diaF + '/' + mesF + '/' + anoF
-    },
-  },
 }
 </script>
