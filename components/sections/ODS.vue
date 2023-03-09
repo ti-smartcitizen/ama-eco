@@ -5,17 +5,19 @@
         <div
           class="row justify-content-center align-items-lg-center h-100 bgVerde"
         >
-          <div class="d-none d-lg-flex col col-lg-6">A</div>
+          <div class="d-none d-lg-flex col-12 col-lg-6">
+            <img class="img-fluid" src="~/assets/ods-phone.png" alt="" />
+          </div>
           <div class="col-12 col-lg-6">
-            <h1 class="mb-3 mb-lg-5 mx-auto">
+            <div class="ods-title">
               {{ $store.state.contentSite.home.jobs_ods.title }}
-            </h1>
-            <h3 class="w-100 w-lg-75 mb-3 mb-lg-5 mx-auto">
+            </div>
+            <div class="ods-text">
               {{ $store.state.contentSite.home.jobs_ods.sub_title }}
-            </h3>
-            <p class="w-100 w-lg-75 mb-3 mx-auto">
+            </div>
+            <div class="ods-text">
               {{ $store.state.contentSite.home.jobs_ods.description }}
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -26,3 +28,24 @@
 <script>
 export default {}
 </script>
+
+<style scoped>
+.ods-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.ods-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  max-width: 526px;
+  margin-bottom: 24px;
+}
+</style>

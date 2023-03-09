@@ -55,7 +55,9 @@
     "about": {
       "sub": "Sobre",
       "title": "Olá, somos o <br /> AMA!",
-      "desc": "Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. Sabemos que grandes mudanças começam com pequenas atitudes e é dentro da nossa casa que o cuidado aparece primeiro.<br /><br />Não paramos por aí! O que gente quer mesmo, é ver o maior número de pessoas engajadas na causa conosco. Vamos cuidar da nossa quadra, dos nossos arredores e se conseguirmos as pessoas a fazerem o mesmo, podemos impactar toda a nossa cidade.<br /><br />Sabemos que não podemos controlar o clima, mas podemos controlar nossas escolhas. Cada ação que tomamos para reduzir as emissões de CO2 é um passo importante para conseguirmos alcançar uma real mudança."
+      "desc1": "Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. Sabemos que grandes mudanças começam com pequenas atitudes e é dentro da nossa casa que o cuidado aparece primeiro.",
+      "desc2": "Não paramos por aí! O que gente quer mesmo, é ver o maior número de pessoas engajadas na causa conosco. Vamos cuidar da nossa quadra, dos nossos arredores e se conseguirmos as pessoas a fazerem o mesmo, podemos impactar toda a nossa cidade.",
+      "desc3": "Sabemos que não podemos controlar o clima, mas podemos controlar nossas escolhas. Cada ação que tomamos para reduzir as emissões de CO2 é um passo importante para conseguirmos alcançar uma real mudança."
     },
     "cards": [
       {

@@ -211,6 +211,8 @@ main {
 }
 
 .programas {
+  height: 100vh;
+
   .olaPrograma {
     background: #e8e8e8;
 
@@ -683,7 +685,6 @@ section {
 }
 
 .steps,
-.programas,
 .como-funciona,
 .tarefasODS {
   height: 100vh;
