@@ -1,16 +1,21 @@
 <template>
   <div id="who-we-are" class="container-fluid programas col-xxl-8">
     <div class="row flex-lg-row align-items-stretch h-100">
-      <div class="col-12 col-lg-6 img-container">
+      <div class="col-12 col-lg-6 order-2 order-lg-1 img-container">
         <img
           src="~/assets/intro.png"
           class="d-block intro-img mw-100"
           loading="lazy"
         />
       </div>
-      <div class="col-12 col-lg-6 text-container align-items-lg-center">
+      <div
+        class="col-12 col-lg-6 order-1 order-lg-2 text-container align-items-lg-center"
+      >
         <div class="text-lg-left">
-          <div class="sub-title">Mock</div>
+          <div
+            class="sub-title"
+            v-html="$store.state.contentSite.home.about.sub"
+          ></div>
           <div
             class="lh-1 mb-4 section-title"
             v-html="$store.state.contentSite.home.about.title"
@@ -37,7 +42,7 @@
   .intro-img {
     width: 72%;
     right: 0;
-    top: 15%;
+    top: 12%;
     position: absolute;
   }
 }
@@ -70,8 +75,24 @@
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 200%;
+    line-height: 185%;
     color: #565e73;
+  }
+}
+
+/* <992px */
+@media (max-width: 991.98px) {
+  .img-container {
+    justify-content: center;
+
+    .intro-img {
+      position: relative;
+      width: 326px;
+    }
+  }
+
+  .text-container {
+    padding: 32px;
   }
 }
 </style>

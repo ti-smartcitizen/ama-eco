@@ -53,8 +53,9 @@
   "home": {
     "title": "",
     "about": {
-      "title": "Olá, somos o ama!",
-      "desc": "Uma rede social que conecta pessoas interessadas no compromisso global de desenvolvimento sustentável. Criamos atividades remuneradas para incentivar novos hábitos, contribuir para a educação socioambiental e gerar dados relevantes para as cidades.<br /><br /><strong>Um ciclo positivo que gera benefícios para o planeta e para você.</strong><br /><br /><strong>Vem com a gente!</strong>"
+      "sub": "Sobre",
+      "title": "Olá, somos o <br /> AMA!",
+      "desc": "Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. Sabemos que grandes mudanças começam com pequenas atitudes e é dentro da nossa casa que o cuidado aparece primeiro.<br /><br />Não paramos por aí! O que gente quer mesmo, é ver o maior número de pessoas engajadas na causa conosco. Vamos cuidar da nossa quadra, dos nossos arredores e se conseguirmos as pessoas a fazerem o mesmo, podemos impactar toda a nossa cidade.<br /><br />Sabemos que não podemos controlar o clima, mas podemos controlar nossas escolhas. Cada ação que tomamos para reduzir as emissões de CO2 é um passo importante para conseguirmos alcançar uma real mudança."
     },
     "cards": [
       {
@@ -118,8 +119,8 @@
     },
     "jobs_ods": {
       "title": "Tarefas ODS",
-      "sub_title": "Nossa solução está em educar, conectar e recompensar pessoas para que colaborem na gestão dos problemas ambientais urbanos.",
-      "description": "Quanto maior o número de pessoas, mais questões para solucionar. Ao apoiar as cidades na implementação da Agenda 2030 em nível local, o AMA cumpre papel fundamental na municipalização dos ODS através de tarefas, pesquisas e ações ambientais voltadas à população."
+      "sub_title": "Utilizamos elementos encontrados em jogos para que as atividades ambientais disponíveis aos usuários sejam apresentadas de uma maneira divertida e desafiadora. São criadas para motivar o alcance de objetivos de maneira mais eficaz e prazerosa. Com recursos interativos e gamificados, as atividades tornam-se em algo mais empolgante.",
+      "description": "Todas as atividades são inspiradas nos 17 Objetivos de Desenvolvimento Sustentável da ONU e vêm acompanhadas por uma descrição e um card, ou vídeo explicativo, além do valor de pontos e recompensas. Ao compartilhar a realização de uma atividade no Feed, o usuário motiva outros usuários a promoverem a conscientização sobre questões importantes relacionadas ao desenvolvimento sustentável."
     },
     "blog": {
       "title": "Blog do ama",

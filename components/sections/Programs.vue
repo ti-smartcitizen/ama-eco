@@ -9,19 +9,14 @@
         <div
           v-for="(item, id) of $store.state.contentSite.home.cards"
           :key="id + 'A'"
-          class="col-12 col-lg-4 pb-5"
+          class="col-12 col-lg-4 pb-5 mt-5"
         >
-          <div class="d-flex">
-            <img
-              :src="require(`~/assets/${item.img}`)"
-              alt=""
-              class="mb-3 mr-2"
-              width="70"
-            />
-            <h2 v-html="item.title"></h2>
+          <div class="d-flex align-items-center">
+            <SVGFactory :svg="item.modalSvg" />
+            <h2 class="svg-title ml-4" v-html="item.title"></h2>
           </div>
 
-          <p>{{ item.text }}</p>
+          <p class="mt-4 main-text">{{ item.text }}</p>
           <svg
             class="btn-svg"
             width="32"
@@ -42,7 +37,7 @@
 
       <b-carousel
         id="carousel-fade"
-        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 justify-content-center align-items-center"
+        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 pt-5 justify-content-center align-items-center"
         fade
         indicators
       >
@@ -52,14 +47,13 @@
           class="itemSlideStep"
         >
           <template #img>
-            <img
-              :src="require(`~/assets/${item.img}`)"
-              alt=""
-              class="mb-4 mb-lg-3"
-              height="80"
-            />
-            <h2 class="mb-4 mb-lg-0" v-html="item.title"></h2>
-            <p>{{ item.text }}</p>
+            <div class="d-flex align-items-center">
+              <SVGFactory :svg="item.modalSvg" />
+              <h2 class="svg-title ml-4" v-html="item.title"></h2>
+            </div>
+            <p class="mt-4 main-text">{{ item.text }}</p>
+            <br />
+            <p class="main-text">{{ item.modalText }}</p>
           </template>
         </b-carousel-slide>
       </b-carousel>
@@ -75,10 +69,12 @@
 
 <script>
 import ProgramModal from '~/components/modals/ProgramModal.vue'
+import SVGFactory from '~/components/SVGFactory.vue'
 
 export default {
   components: {
     ProgramModal,
+    SVGFactory,
   },
   data() {
     return {
@@ -93,7 +89,6 @@ export default {
   },
   methods: {
     openModal(item) {
-      console.log(item)
       this.modalType = {
         title: item.title,
         text: item.modalText,
@@ -119,5 +114,21 @@ export default {
       fill: #2157cc;
     }
   }
+}
+
+.main-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  color: #fff;
+}
+
+.svg-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
 }
 </style>

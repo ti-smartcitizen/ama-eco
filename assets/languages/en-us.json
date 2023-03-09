@@ -54,39 +54,58 @@
   "home": {
     "title": "",
     "about": {
+      "sub": "About",
       "title": "Hello, we're <br /> AMA!",
       "desc": "We form a collaborative network that multiplies sustainable behavior. We know that big changes start with small attitudes, and it is inside our homes that care appears first.<br/><br/>We do not stop there! What we really want is to see as many people as possible engaged in the cause with us. Let's take care of our court, our surroundings, and if we get people to do the same, we can impact our whole city.<br/><br/>We know we can't control the climate, but we can control our choices. Every action we take to reduce CO2 emissions is an important step towards achieving real change.<br />"
     },
     "cards": [
       {
+        "modalText": "In the Feed we periodically publish information related to education and environmental preservation and urban cleaning, available to networks of neighbors in each micro area of the cities where we operate. It is also through the Feed that the AMAs (Environment Agents) can share their actions, interact, like and comment on the published posts.",
+        "modalImg": "modal-1.png",
+        "modalSvg": "feed",
         "img": "inspira-educa-engaja.png",
-        "title": "To Inspire, educate,<br /> and engage",
-        "text": "We organize the city into micro urban areas, establishing local leaders who promote healthy behaviors related to cleaning maintenance, health, and environmental education"
+        "title": "Feed",
+        "text": "It is the AMA Social Network, with lots of informative content produced by the AMA  AMA's communication team and where the AMAs (Environment Agents) share their environmental actions."
       },
       {
+        "modalText": "By clicking on Actions, the AMA (Agent of the Environment) will have access to cards with suggestions of activities and surveys in which they can participate. Each participation earns points for a ranking that rewards the best placed by cycles and seasons, as well as cash values (sustainable cashback) according to the complexity of each activity.",
+        "modalImg": "modal-2.png",
+        "modalSvg": "actions",
         "img": "tarefas-ods.png",
-        "title": "SDG <br />tasks",
-        "text": "Simple environmental education activities, aligned with the UN’s Sustainable Development Goals, 2030 agenda."
+        "title": "Actions",
+        "text": "This is where suggestions for activities and participation in research related to the city where the related to the city where the AMAs (Environment Agents) reside. These activities are divided by seasons, cycles and weeks."
       },
       {
+        "modalText": "The evaluation of Your Street by the AMAs (Environment Agents) is important so that we can understand the greatest desires and needs of each mapped micro-area. It is also where the AMAs will be able to evaluate the quality of the activities carried out by the Local Leader selected as responsible for that region.",
+        "modalImg": "modal-3.png",
+        "modalSvg": "street",
         "img": "cashback-sustentavel.png",
-        "title": "Cashback<br />Sustainable",
-        "text": "Our activities generate points and cash earnings to encourage environmental practices."
+        "title": "Your Street",
+        "text": "Each AMA (Agent of the Environment) can weekly evaluate the conditions of the street where he or she lives, giving scores from 1 to 5 stars on each available card."
       },
       {
+        "modalText": "When you create your AMA Digital Account, the AMAs (Environment Agents) start receiving the amounts referring to the activities performed. Likewise, the Local Leader receives his or her monthly remuneration. The balance of the AMA Digital Account can be transferred to a bank account of the same owner, to the account of another AMA (Environment Agent), or used to pay for products and services registered in the AMA Partner Network.",
+        "modalImg": "modal-4.png",
+        "modalSvg": "account",
         "img": "ranking-da-sustentabilidade.png",
-        "title": "Sustainability <br />Ranking",
-        "text": "Each completed task, action or research helps you grow your Environmental Id and level up in our platform."
+        "title": "Account",
+        "text": "It is through the AMA Digital Account that the AMAs (Environment Agents) receive cash values for activities carried out, among other features."
       },
       {
+        "modalText": "The commercial establishments, products and services registered on the AMA platform are specific to each city where we operate. The AMA (Agent of the Environment) can make payments when consuming a certain product or service with the available balance in his AMA Digital Account.",
+        "modalImg": "modal-5.png",
+        "modalSvg": "network",
         "img": "rede-social-de-vizinhos.png",
-        "title": "A social network <br />of neighbors",
-        "text": "We connect folks in local communities so they can share their achievements, encourage neighbors, and promote their products and services."
+        "title": "Network",
+        "text": "This is where you will find the Network of commercial establishments, products and services registered as partners of the AMA platform."
       },
       {
+        "modalText": "The Local Leader carries out environmental education and preservation, cleaning, and urban maintenance activities in the micro-area he or she is responsible for, and is paid on a monthly basis. Everything is registered via the application, and your neighbors and the City Hall can follow it remotely.",
+        "modalImg": "modal-6.png",
+        "modalSvg": "lead",
         "img": "logistica-reversa.png",
-        "title": "Reverse<br />Logistics",
-        "text": "We promote waste separation and voluntary disposal in collect points, ensuring the correct destination of recyclables."
+        "title": "Local Leader",
+        "text": "The Local Leader is an AMA (Agent of the Environment) selected to be responsible for a micro-area in the vicinity of where he or she lives."
       }
     ],
     "about_app": {
@@ -101,8 +120,8 @@
     },
     "jobs_ods": {
       "title": "SDG TASKS",
-      "sub_title": "Our goal is to educate, connect and reward people to collaborate to the management of urban environmental issues",
-      "description": "The greater the number of people, the more issues to tackle. By supporting cities in the implementation of the 2030 Agenda at the micro level, AMA plays a fundamental role in the municipalization of the SDGs through tasks, research and environmental actions designed for the population."
+      "sub_title": "We use elements found in games so that the environmental activities available to users are presented in a fun and challenging way. They are created to motivate the achievement of goals in a more effective and enjoyable way. With interactive and gamified features, the activities become more exciting and even addictive.",
+      "description": "All activities are inspired by the 17 UN Sustainable Development Goals and are accompanied by a description and an explanatory card, or video, as well as the value of points and rewards. By sharing the completion of an activity in the Feed, the user motivates other users to raise awareness about important issues related to sustainable development."
     },
     "blog": {
       "title": "ama blog",
