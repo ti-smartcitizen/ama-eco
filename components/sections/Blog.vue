@@ -8,27 +8,29 @@
           </div>
         </div>
       </div>
-      <div v-for="(item, id) of posts" :key="id" class="row mb-0 mx-0 mx-lg-5">
-        <div class="col-12 blogpost">
-          <div class="thumbnail">
-            <img :src="item.thumb" class="d-block img-fluid" loading="lazy" />
-          </div>
-          <div class="card p-3 border-0">
-            <div class="card-body">
-              <p class="card-text">
-                {{ dataAtualFormatada(item.date) }} |
-                <span class="categoria">{{ item.categoria }}</span>
-              </p>
-              <h2>
-                <a :href="item.link" target="_blank">{{
-                  item.title.rendered
-                }}</a>
-              </h2>
-              <p v-html="item.excerpt.rendered"></p>
-              <a :href="item.link" target="_blank"
-                >{{ $store.state.contentSite.home.blog.read_more }}
-                <b-icon icon="arrow-right" size="1"
-              /></a>
+      <div class="posts-container">
+        <div v-for="(item, id) of posts" :key="id">
+          <div class="blogpost">
+            <div class="thumbnail">
+              <img :src="item.thumb" class="d-block img-fluid" loading="lazy" />
+            </div>
+            <div class="card p-3 border-0">
+              <div class="card-body">
+                <p class="card-text">
+                  {{ dataAtualFormatada(item.date) }} |
+                  <span class="categoria">{{ item.categoria }}</span>
+                </p>
+                <h2>
+                  <a :href="item.link" target="_blank">{{
+                    item.title.rendered
+                  }}</a>
+                </h2>
+                <p v-html="item.excerpt.rendered"></p>
+                <a :href="item.link" target="_blank"
+                  >{{ $store.state.contentSite.home.blog.read_more }}
+                  <b-icon icon="arrow-right" size="1"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -107,5 +109,21 @@ export default {
   line-height: 100%;
   text-align: center;
   color: #131e3b;
+}
+
+.blogpost {
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 </style>
