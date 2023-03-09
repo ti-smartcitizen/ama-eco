@@ -5,7 +5,7 @@
     <b-navbar
       toggleable="xl"
       type="light"
-      class="w-100 text-center text-xl-left"
+      class="w-100 text-center text-xl-left p-2"
     >
       <b-container class="custom-container">
         <b-navbar-brand href="/"
