@@ -398,26 +398,13 @@ section {
   }
 }
 
-.blog {
-  h1 {
-    font-family: $sans-serif;
-    font-style: normal;
-    font-weight: $bold-weight;
-    font-size: 55px;
-    line-height: 50px;
-    color: $verdeAma;
-  }
-}
-
 .veja_mais_posts {
-  font-family: $sans-serif;
-  font-style: normal;
-  font-weight: $bold-weight;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
   letter-spacing: 0.08em;
-  color: $verdeAma;
+  color: #fff;
   padding: 12px 32px;
   box-sizing: border-box;
   border-radius: 16px;
@@ -450,33 +437,6 @@ section {
     }
 
     .card-body {
-      .card-text {
-        font-family: $serif;
-        font-style: normal;
-        font-weight: $regular-weight;
-        font-size: 12px;
-        line-height: 24px;
-        color: #6e7078;
-      }
-
-      h2 {
-        color: #4f0dcc;
-        font-family: $sans-serif;
-        font-style: normal;
-        font-weight: $bold-weight;
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      p {
-        font-family: $serif;
-        font-style: normal;
-        font-weight: $regular-weight;
-        font-size: 16px;
-        line-height: 27px;
-        color: #252528;
-      }
-
       a {
         font-family: $sans-serif;
         font-style: normal;

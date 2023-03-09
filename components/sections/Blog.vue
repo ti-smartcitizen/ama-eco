@@ -11,29 +11,62 @@
       <div class="posts-container">
         <div v-for="(item, id) of posts" :key="id">
           <div class="blogpost">
-            <div>
-              <img
-                :src="item.thumb"
-                class="d-block img-fluid blog-thumb"
-                loading="lazy"
-              />
-            </div>
-            <div class="card p-3 border-0">
+            <img
+              :src="item.thumb"
+              class="d-block img-fluid blog-thumb"
+              loading="lazy"
+            />
+
+            <div class="p-2 pb-1 pt-0">
               <div class="card-body">
-                <p class="card-text">
-                  {{ dataAtualFormatada(item.date) }} |
-                  <span class="categoria">{{ item.categoria }}</span>
-                </p>
-                <h2>
+                <div class="card-date mb-1">
+                  {{ dataAtualFormatada(item.date) }}
+                </div>
+                <div class="card-category mb-3">{{ item.categoria }}</div>
+                <div class="card-title mb-3">
                   <a :href="item.link" target="_blank">{{
                     item.title.rendered
                   }}</a>
-                </h2>
-                <p v-html="item.excerpt.rendered"></p>
-                <a :href="item.link" target="_blank"
-                  >{{ $store.state.contentSite.home.blog.read_more }}
-                  <b-icon icon="arrow-right" size="1"
-                /></a>
+                </div>
+                <div class="d-flex">
+                  <div
+                    class="card-content"
+                    v-html="
+                      item.excerpt.rendered.length > 90
+                        ? item.excerpt.rendered.substring(0, 90) + '...'
+                        : item.excerpt.rendered
+                    "
+                  ></div>
+
+                  <div
+                    class="d-flex justify-content-right align-items-end mb-3 ml-1"
+                  >
+                    <a :href="item.link" target="_blank"
+                      ><svg
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.9766 16.9996L13.8516 12.8746L15.0299 11.6963L20.3332 16.9996L15.0299 22.303L13.8516 21.1246L17.9766 16.9996Z"
+                          fill="#131E3B"
+                        />
+                        <rect
+                          x="1"
+                          y="1"
+                          width="32"
+                          height="32"
+                          rx="6"
+                          stroke="#DDDEE3"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -42,7 +75,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-12 my-2 my-lg-0 text-center">
+        <div class="col-12 text-center mt-3 mb-5">
           <a
             href="https://blog.cidadeama.com.br/"
             target="_blank"
@@ -67,13 +100,15 @@ export default {
       .$get('https://blog.cidadeama.com.br/wp-json/wp/v2/posts')
       .then((res) => {
         res.forEach((item, index) => {
-          this.posts.push({
-            ...res[index],
-            categoria: null,
-            thumb: null,
-          })
-          this.getCategoriaPost(res[index].categories[0], index)
-          this.getThumbPost(res[index].featured_media, index)
+          if (index < 9) {
+            this.posts.push({
+              ...res[index],
+              categoria: null,
+              thumb: null,
+            })
+            this.getCategoriaPost(res[index].categories[0], index)
+            this.getThumbPost(res[index].featured_media, index)
+          }
         })
       })
   },
@@ -126,14 +161,67 @@ export default {
 .blogpost {
   margin-bottom: 30px;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
+  filter: drop-shadow(0 18px 28px rgba(9, 30, 66, 0.15));
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 18px 28px rgba(9, 30, 66, 0.15);
   width: 300px;
 }
 
 .blog-thumb {
   width: 100%;
   max-height: 224px;
+}
+
+.card-date {
+  font-family: 'Roboto', monospace;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #565e73;
+}
+
+.card-category {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ff6b00;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #131e3b;
+
+  a {
+    color: #131e3b;
+    text-decoration: none;
+
+    &:hover {
+      color: #ff6b00;
+    }
+  }
+}
+
+.card-content {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565e73;
+}
+
+@media (max-width: 991px) {
+  .posts-container {
+    padding: 0 50px;
+    justify-content: center;
+  }
+
+  .blogpost {
+    width: 100%;
+  }
 }
 </style>
