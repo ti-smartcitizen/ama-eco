@@ -1,25 +1,25 @@
 {
   "header": {
     "menu": [
-      {
-        "link": "/#who-we-are",
-        "desc": "Quem somos"
+     {
+        "link": "/#about",
+        "desc": "Sobre"
       },
       {
-        "link": "/#environmental-programs",
-        "desc": "Programas Ambientais"
+        "link": "/#platform",
+        "desc": "Plataforma"
       },
       {
-        "link": "/#our-app",
-        "desc": "Nosso APP"
+        "link": "/#how-it-works",
+        "desc": "Como Funciona"
+      },
+      {
+        "link": "/#social-network",
+        "desc": "Rede Social"
       },
       {
         "link": "/#blog",
         "desc": "Blog"
-      },
-      {
-        "link": "/#where-we-are",
-        "desc": "Onde estamos"
       },
       {
         "link": "/contact",

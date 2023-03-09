@@ -2,24 +2,24 @@
   "header": {
     "menu": [
       {
-        "link": "/#who-we-are",
-        "desc": "Who We Are"
+        "link": "/#about",
+        "desc": "About"
       },
       {
-        "link": "/#environmental-programs",
-        "desc": "Environmental Programs"
+        "link": "/#platform",
+        "desc": "Platform"
       },
       {
-        "link": "/#our-app",
-        "desc": "Our App"
+        "link": "/#how-it-works",
+        "desc": "How it Works"
+      },
+      {
+        "link": "/#social-network",
+        "desc": "Social Network"
       },
       {
         "link": "/#blog",
         "desc": "Blog"
-      },
-      {
-        "link": "/#where-we-are",
-        "desc": "Where We Are"
       },
       {
         "link": "/contact",
