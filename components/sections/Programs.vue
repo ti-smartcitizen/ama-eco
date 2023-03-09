@@ -1,5 +1,5 @@
 <template>
-  <div id="environmental-programs" class="steps container-fluid">
+  <div class="steps container-fluid">
     <div
       class="container h-100 justify-content-center align-items-center d-flex"
     >

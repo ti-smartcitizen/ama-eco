@@ -5,9 +5,9 @@
     <b-navbar
       toggleable="xl"
       type="light"
-      class="w-100 text-center text-xl-left"
+      class="w-100 text-center text-xl-left p-2"
     >
-      <b-container>
+      <b-container class="custom-container">
         <b-navbar-brand href="/"
           ><img src="~/assets/LogoAma.png" class="mw-100" />
         </b-navbar-brand>
@@ -32,26 +32,27 @@
             <b-nav-item
               v-for="(item, id) of $store.state.contentHeader.menu"
               :key="id + 'menu'"
+              class="mr-3"
               :href="item.link"
               >{{ item.desc }}</b-nav-item
             >
           </b-navbar-nav>
 
-          <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-item
-              v-show="$store.state.localStorage.languageActive == 1"
-              class="flag enUs"
+              class="custom-flag"
+              :class="$store.state.localStorage.languageActive == 1 && 'active'"
               @click="$store.commit('setlanguageActive', 2)"
-              ><img src="@/assets/eua.svg" height="20" class="ml-2" alt=""
+              ><img src="@/assets/eua.svg" height="20" alt=""
             /></b-nav-item>
             <b-nav-item
-              v-show="$store.state.localStorage.languageActive == 2"
-              class="flag ptBr"
+              class="custom-flag"
+              :class="$store.state.localStorage.languageActive == 2 && 'active'"
               @click="$store.commit('setlanguageActive', 1)"
-              ><img src="@/assets/brasil.svg" height="20" class="ml-2" alt=""
+              ><img src="@/assets/brasil.svg" height="20" alt=""
             /></b-nav-item>
           </b-navbar-nav>
+
           <b-navbar-nav class="mt-4 ml-auto d-block d-xl-none">
             <div>
               <a
@@ -132,3 +133,26 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.active {
+  opacity: 0.4;
+}
+
+.custom-container {
+  max-width: 100% !important;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.custom-flag {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 991px) {
+  .custom-container {
+    padding: 0;
+  }
+}
+</style>

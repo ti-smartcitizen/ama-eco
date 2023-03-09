@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="blog" class="container blog pt-5">
+    <div class="container blog pt-5">
       <div class="row mb-5">
         <div class="col-12 py-3 text-center">
           <div class="mx-5 blog-title">

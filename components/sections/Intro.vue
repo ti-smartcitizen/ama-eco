@@ -1,5 +1,5 @@
 <template>
-  <div id="who-we-are" class="container-fluid programas col-xxl-8">
+  <div class="container-fluid programas col-xxl-8">
     <div class="row flex-lg-row align-items-stretch h-100">
       <div class="col-12 col-lg-6 order-2 order-lg-1 img-container">
         <img
