@@ -42,6 +42,7 @@ export default {
     '~/assets/css/footer.scss',
     '~/assets/css/hero.scss',
     '~/assets/css/contact.scss',
+    '~/assets/css/howWork.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

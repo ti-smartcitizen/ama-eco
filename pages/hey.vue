@@ -80,95 +80,8 @@
           </b-carousel>
         </div>
       </div>
-      <div
-        id="our-app"
-        class="como-funciona container-fluid py-5 align-items-center d-flex"
-      >
-        <div class="container">
-          <div class="text-center">
-            <div class="row">
-              <div class="col-12">
-                <h1>{{ $store.state.contentSite.home.about_app.title }}</h1>
-              </div>
-            </div>
-            <div class="row p-0 py-lg-5">
-              <div class="col-12 mb-5 mb-lg-0 col-lg-4 align-items-stretch">
-                <div
-                  class="icon d-flex justify-content-center align-items-end align-items-lg-center"
-                >
-                  <img
-                    src="~/assets/crie-sua-conta-ama.jpg"
-                    class="mb-2"
-                    height="175"
-                  />
-                </div>
-                <h2
-                  class="d-flex justify-content-center align-items-center mt-2 mt-lg-0"
-                >
-                  <p
-                    v-html="
-                      $store.state.contentSite.home.about_app.create_account
-                    "
-                  ></p>
-                </h2>
-                <p class="w-75 m-auto">
-                  {{ $store.state.contentSite.home.about_app.free_download }}
-                </p>
-              </div>
-              <div
-                class="col-12 mb-5 mb-lg-0 col-lg-4 justify-content-center align-items-stretch"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-end align-items-lg-center"
-                >
-                  <img
-                    src="~/assets/participe-das-nossas-pesquisas-e-tarefas.jpg"
-                    class="mb-2"
-                    height="175"
-                  />
-                </div>
-                <h2
-                  class="d-flex justify-content-center align-items-center mt-2 mt-lg-0"
-                >
-                  <p>
-                    <span>{{
-                      $store.state.contentSite.home.about_app.join_search
-                    }}</span>
-                  </p>
-                </h2>
-                <p class="w-75 m-auto">
-                  {{ $store.state.contentSite.home.about_app.remunerated_job }}
-                </p>
-              </div>
-              <div
-                class="col-12 col-lg-4 mb-0 mb-lg-0 justify-content-center align-items-stretch"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-end align-items-lg-center"
-                >
-                  <img src="~/assets/deu-cash.jpg" class="mb-2" height="175" />
-                </div>
-                <h2
-                  class="d-flex justify-content-center align-items-center mt-2 mt-lg-0"
-                >
-                  <p
-                    v-html="$store.state.contentSite.home.about_app.get_cash"
-                  ></p>
-                </h2>
-                <p class="w-75 m-auto">
-                  {{ $store.state.contentSite.home.about_app.acumulate_points }}
-                </p>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-12">
-                <a href="/download-ama">{{
-                  $store.state.contentSite.home.about_app.download_now
-                }}</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="our-app">
+        <HowWorks />
       </div>
 
       <!--<div class="container-fluid">
@@ -262,68 +175,17 @@
         </div>
         <hr />
       </div>
-      <!-- container -->
-      <div id="where-we-are" class="container ondeestamos my-5 text-center">
-        <div class="row">
-          <div class="col-12 mb-1">
-            <h3>{{ $store.state.contentSite.home.localization.title }}</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h1 v-html="$store.state.contentSite.home.localization.sub_title" />
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <GmapMap
-            :center="{ lat: -25.43432, lng: -49.2638 }"
-            :zoom="7"
-            map-type-id="roadmap"
-            style="width: 100%; height: 550px"
-            :options="{
-              zoomControl: false,
-              mapTypeControl: false,
-              scaleControl: false,
-              streetViewControl: false,
-              rotateControl: true,
-              fullscreenControl: false,
-              disableDefaultUi: true,
-            }"
-          >
-            <GmapMarker
-              v-for="(i, idx) in pins"
-              :key="'PIN' + idx"
-              :ref="`marker${idx}`"
-              :position="{
-                lat: Number(i.lat),
-                lng: Number(i.lng),
-              }"
-              :clickable="false"
-              :draggable="false"
-              :icon="markerOptions"
-            />
-            <!-- <GmapCustomMarker
-              v-for="(i, idx) in pins"
-              :key="'PIN' + idx"
-              ref="Cidades"
-              class="markerGoogle Cidades"
-              :draggable="false"
-              :marker="{ lat: i.cidade_lat, lng: i.cidade_lng }"
-            >
-              <img src="~/assets/pin_mapa.png" height="30" />
-            </GmapCustomMarker> -->
-          </GmapMap>
-        </div>
-      </div>
     </main>
     <Footer />
   </div>
 </template>
 
 <script>
+import HowWorks from '../components/sections/HowWork.vue'
 export default {
+  components: {
+    HowWorks,
+  },
   data() {
     return {
       posts: [],
