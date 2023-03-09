@@ -31,7 +31,7 @@
             <a
               target="_blank"
               href="https://www.youtube.com/channel/UCOybdqZCXnBJ-EpmmSdWMiw"
-              class="ml-3"
+              class="ml-3 social-icon"
             >
               <svg
                 width="28"
@@ -47,14 +47,14 @@
               </svg>
             </a>
             <a
-              class="ml-3"
+              class="ml-3 social-icon"
               target="_blank"
               href="https://www.tiktok.com/@agentesdomeioambiente?is_from_webapp=1&sender_device=pc"
             >
               <img src="../assets/rede-social/tiktok-green.svg" alt="" />
             </a>
             <a
-              class="ml-3"
+              class="ml-3 social-icon"
               target="_blank"
               href="https://www.facebook.com/agentedomeioambiente"
             >
@@ -72,7 +72,7 @@
               </svg>
             </a>
             <a
-              class="ml-3"
+              class="ml-3 social-icon"
               target="_blank"
               href="https://www.instagram.com/agentesdomeioambiente/"
             >
@@ -90,7 +90,7 @@
               </svg>
             </a>
             <a
-              class="ml-3"
+              class="ml-3 social-icon"
               target="_blank"
               href="https://www.linkedin.com/company/agentesdomeioambiente"
             >
@@ -108,7 +108,7 @@
               </svg>
             </a>
             <a
-              class="ml-3"
+              class="ml-3 social-icon"
               href="https://twitter.com/cidade_ama"
               target="_blank"
             >
@@ -234,6 +234,12 @@ export default {}
 .logo-container {
   display: flex;
   justify-content: flex-start;
+}
+
+.social-icon {
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 991px) {
