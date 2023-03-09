@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid social">
-    <div class="row h-100">
+    <div class="row">
       <div class="container">
-        <div class="row h-100">
+        <div class="row">
           <div class="col-12 col-lg-6">
             <div class="d-flex justify-content-end align-items-start w-100">
               <div class="text-lg-left">
@@ -115,8 +115,7 @@ export default {
 <style scoped lang="scss">
 .social {
   padding-top: 80px;
-  padding-bottom: 40px;
-  height: 105vh;
+  height: 100vh;
 }
 
 .sub-title {
