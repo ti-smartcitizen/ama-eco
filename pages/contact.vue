@@ -8,37 +8,33 @@
         </div>
       </div>
       <div class="container">
-        <div class="row py-4">
-          <div class="col-12">
+        <div class="row py-5">
+          <div style="padding: 0 64px" class="col-12 col-lg-5">
             <h1>{{ $store.state.contentSite.contact.title }}</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-5">
             <p class="subtitle">
               {{ $store.state.contentSite.contact.sub_title }}
             </p>
-            <p>SmartCitizen</p>
-            <p>
-              Rua Bruno Filgueira, 2434<br />CEP 80.710-530<br />Bigorrilho -
-              Curitiba - PR
-            </p>
-            <p>
+            <div class="d-none d-lg-flex mb-2">
               <img
-                src="~/assets/whatsapp-icon.png"
-                height="24"
-                class="mr-1"
-              /><a href="https://api.whatsapp.com/send?phone=5541987536283"
-                >+55 41 98753-6283</a
-              >
-            </p>
+                class="mb-4"
+                src="../assets/rede-social/smart-logo-dark.svg"
+                alt=""
+              />
+            </div>
+            <div class="d-none d-lg-flex">
+              <p>
+                Rua Bruno Filgueira, 2434 CEP 80.710-530<br />Bigorrilho -
+                Curitiba - Paraná - Brasil
+              </p>
+            </div>
+            <div class="d-none d-lg-flex">
+              <p>CNPJ: 36.208.711/0001-01</p>
+            </div>
           </div>
-          <div class="col-12 col-lg-7">
+          <div style="padding: 0 64px" class="col-12 col-lg-7">
             <div class="borderRight">
-              <h5>{{ $store.state.contentSite.contact.contact_us }}</h5>
               <label for="name"
-                >{{ $store.state.contentSite.contact.name
-                }}<span v-if="error.name" class="error">{{
+                ><span v-if="error.name" class="error">{{
                   $store.state.contentSite.contact.errors.name
                 }}</span></label
               >
@@ -46,28 +42,26 @@
                 v-model="name"
                 type="text"
                 name="name"
-                placeholder="João da silva"
+                :placeholder="$store.state.contentSite.contact.name"
                 :disabled="disabled"
               />
 
               <label for="phone"
-                >{{ $store.state.contentSite.contact.phone
-                }}<span v-if="error.phone" class="error">{{
+                ><span v-if="error.phone" class="error">{{
                   $store.state.contentSite.contact.errors.phone
                 }}</span></label
               >
               <input
                 v-model="phone"
                 v-mask="'+## (##) #####-####'"
-                placeholder="+55 (99) 99999-9999"
+                :placeholder="$store.state.contentSite.contact.phone"
                 type="text"
                 name="phone"
                 :disabled="disabled"
               />
 
               <label for="mail"
-                >{{ $store.state.contentSite.contact.mail
-                }}<span v-if="error.mail" class="error">{{
+                ><span v-if="error.mail" class="error">{{
                   $store.state.contentSite.contact.errors.mail
                 }}</span></label
               >
@@ -75,12 +69,11 @@
                 v-model="mail"
                 type="text"
                 name="mail"
-                placeholder="email@example.com"
+                :placeholder="$store.state.contentSite.contact.mail"
                 :disabled="disabled"
               />
               <label for="subject"
-                >{{ $store.state.contentSite.contact.subject
-                }}<span v-if="error.subject" class="error">{{
+                ><span v-if="error.subject" class="error">{{
                   $store.state.contentSite.contact.errors.subject
                 }}</span></label
               >
@@ -94,13 +87,13 @@
               />
 
               <label for="message"
-                >{{ $store.state.contentSite.contact.message
-                }}<span v-if="error.message" class="error">{{
+                ><span v-if="error.message" class="error">{{
                   $store.state.contentSite.contact.errors.message
                 }}</span></label
               >
               <textarea
                 id="message"
+                :placeholder="$store.state.contentSite.contact.message"
                 v-model="message"
                 name="message"
                 cols="30"
