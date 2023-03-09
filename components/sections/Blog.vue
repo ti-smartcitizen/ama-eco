@@ -11,8 +11,12 @@
       <div class="posts-container">
         <div v-for="(item, id) of posts" :key="id">
           <div class="blogpost">
-            <div class="thumbnail">
-              <img :src="item.thumb" class="d-block img-fluid" loading="lazy" />
+            <div>
+              <img
+                :src="item.thumb"
+                class="d-block img-fluid blog-thumb"
+                loading="lazy"
+              />
             </div>
             <div class="card p-3 border-0">
               <div class="card-body">
@@ -111,6 +115,14 @@ export default {
   color: #131e3b;
 }
 
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 150px;
+}
+
 .blogpost {
   margin-bottom: 30px;
   border: 1px solid #eaeaea;
@@ -120,10 +132,8 @@ export default {
   width: 300px;
 }
 
-.posts-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.blog-thumb {
   width: 100%;
+  max-height: 224px;
 }
 </style>
