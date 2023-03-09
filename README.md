@@ -1,7 +1,7 @@
 # ama-eco
 
 Hey
-Contato
+Contato OK
 Header OK
 Footer OK
 HowWork
@@ -12,7 +12,7 @@ Gean
 Hero OK
 
 - Intro
-  Programs
+- Programs
   ODS
   Social
   Blog

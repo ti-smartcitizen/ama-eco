@@ -37,7 +37,7 @@
   .intro-img {
     width: 72%;
     right: 0;
-    top: 13%;
+    top: 15%;
     position: absolute;
   }
 }
@@ -48,7 +48,6 @@
   background: #fff;
   padding-left: 64px;
   position: relative;
-  bottom: 24px;
 
   .sub-title {
     font-family: 'Poppins', sans-serif;
@@ -73,23 +72,6 @@
     font-size: 18px;
     line-height: 200%;
     color: #565e73;
-  }
-}
-
-/* 1200px 768px 992px */
-@media (max-width: 1199.98px) {
-  .img-container {
-    .intro-img {
-      width: 100%;
-      right: 0;
-      top: 0;
-      position: absolute;
-    }
-  }
-
-  .text-container {
-    padding-left: 0;
-    bottom: 0;
   }
 }
 </style>
