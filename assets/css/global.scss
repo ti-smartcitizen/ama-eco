@@ -76,8 +76,7 @@ $spaceUnit: 4px;
 
 @media (max-height: 768px) {
   .steps,
-  .programas,
-  .como-funciona {
+  .programas {
     height: initial !important;
   }
 
@@ -98,6 +97,8 @@ $spaceUnit: 4px;
   }
 
   .programas {
+    height: initial !important;
+
     img {
       margin-top: 20px !important;
     }
@@ -141,7 +142,9 @@ $spaceUnit: 4px;
     background-size: 100vh !important;
     background-position: -100px bottom !important;
     background-color: #7adf4e !important;
-
+    min-height: 100vh !important;
+    height: initial !important;
+    display: block !important;
     .bgVerde {
       background-color: #7adf4e !important;
     }
@@ -165,17 +168,6 @@ $spaceUnit: 4px;
     }
   }
 
-  .como-funciona,
-  .tarefasODS {
-    min-height: 100vh !important;
-    height: initial !important;
-    display: block !important;
-  }
-
-  .como-funciona h1 {
-    font-size: 35px !important;
-  }
-
   .ondeestamos h1 {
     font-size: 35px !important;
     line-height: 30px !important;
@@ -186,21 +178,6 @@ $spaceUnit: 4px;
       width: 100% !important;
       font-size: 26px;
     }
-  }
-
-  .como-funciona {
-    h2 {
-      min-height: initial !important;
-    }
-
-    .icon {
-      height: 220px !important;
-    }
-  }
-
-  .programas,
-  .como-funciona {
-    height: initial !important;
   }
 }
 
@@ -322,60 +299,6 @@ main {
   p {
     color: #fff;
     width: 70%;
-  }
-}
-
-.como-funciona {
-  background: #fff;
-
-  h1 {
-    font-size: 55px;
-    color: $verdeAma;
-    font-family: $sans-serif;
-    font-weight: $bold-weight;
-  }
-
-  .icon {
-    height: 250px;
-  }
-
-  h2 {
-    font-family: $sans-serif;
-    font-style: normal;
-    font-weight: $bold-weight;
-    color: $azulAma;
-    min-height: 90px;
-
-    p {
-      font-size: 2rem;
-      line-height: 32px;
-    }
-
-    strong {
-      font-weight: 900;
-    }
-  }
-
-  p {
-    font-family: $sans-serif;
-    font-size: 20px;
-    margin-bottom: 0;
-    line-height: 27px;
-  }
-
-  a {
-    background: $azulAma;
-    color: $verdeAma;
-    padding: 7px 30px;
-    font-family: $sans-serif;
-    font-style: normal;
-    font-weight: $bold-weight;
-    border-radius: 16px;
-    display: inline-block;
-
-    &:hover {
-      color: #fff;
-    }
   }
 }
 
@@ -685,7 +608,7 @@ section {
 }
 
 .steps,
-.como-funciona,
+.programas,
 .tarefasODS {
   height: 100vh;
 }
