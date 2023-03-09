@@ -1,5 +1,5 @@
 <template>
-  <div class="steps container-fluid">
+  <div id="environmental-programs" class="steps container-fluid">
     <div
       class="container h-100 justify-content-center align-items-center d-flex"
     >
@@ -37,7 +37,7 @@
 
       <b-carousel
         id="carousel-fade"
-        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 pt-5 pb-5 justify-content-center align-items-center"
+        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 pt-5 pb- justify-content-center align-items-center"
         fade
       >
         <b-carousel-slide

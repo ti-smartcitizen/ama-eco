@@ -12,10 +12,10 @@
         </div>
         <div class="icons">
           <div
-            @click="handleActive(icon.id)"
             v-for="icon in icons"
             :key="icon.id"
             :class="`icon ${icon.active && 'active'} ${'icon-' + icon.id}`"
+            @click="handleActive(icon.id)"
           >
             <img
               :src="require(`~/assets/banner/icons/${icon.src}.svg`)"
@@ -47,10 +47,10 @@
         </div>
         <div class="icons">
           <div
-            @click="handleActive(icon.id)"
             v-for="icon in icons"
             :key="icon.id"
             :class="`icon ${icon.active && 'active'} ${'icon-' + icon.id}`"
+            @click="handleActive(icon.id)"
           >
             <img
               :src="require(`~/assets/banner/icons/${icon.src}.svg`)"
@@ -153,7 +153,7 @@ export default {
 /* stylelint-disable no-descending-specificity */
 .banner-wrapper {
   position: relative;
-  padding: 56px 80px;
+  padding: 56px 86px;
   background: #8acc0d;
   border-radius: 64px;
   min-height: 416px;
@@ -247,7 +247,7 @@ export default {
 }
 
 .banner-wrapper-mobile {
-  padding: 24px;
+  padding: 32px;
   padding-bottom: 0;
   display: flex;
   flex-direction: column-reverse;

@@ -5,11 +5,11 @@
         <div
           class="row justify-content-center align-items-lg-center h-100 bgVerde"
         >
-          <div class="d-none d-lg-flex col-12 col-lg-6">
+          <div class="d-lg-flex col-12 col-lg-6">
             <img class="img-fluid" src="~/assets/ods-phone.png" alt="" />
           </div>
           <div class="col-12 col-lg-6">
-            <div class="ods-title">
+            <div class="ods-title mt-4">
               {{ $store.state.contentSite.home.jobs_ods.title }}
             </div>
             <div class="ods-text">
@@ -47,5 +47,11 @@ export default {}
   color: #fff;
   max-width: 526px;
   margin-bottom: 24px;
+}
+
+@media (max-width: 991px) {
+  .tarefasODS {
+    padding: 32px;
+  }
 }
 </style>

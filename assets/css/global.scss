@@ -81,7 +81,7 @@ $spaceUnit: 4px;
   }
 
   .tarefasODS {
-    height: 900px !important;
+    height: 100vh !important;
   }
 }
 
@@ -125,14 +125,11 @@ $spaceUnit: 4px;
   }
 
   .tarefasODS {
-    background-size: 100vh !important;
-    background-position: -100px bottom !important;
-    background-color: #7adf4e !important;
     min-height: 100vh !important;
     height: initial !important;
     display: block !important;
     .bgVerde {
-      background-color: #7adf4e !important;
+      background-color: none !important;
     }
 
     h1 {
@@ -293,7 +290,7 @@ main {
 }
 
 .tarefasODS {
-  background: url('~/assets/tarefasODS.jpg') repeat-x center top;
+  background: url('~/assets/ods.jpg') repeat-x center top;
   height: 100vh;
   font-family: $sans-serif;
 

@@ -14,7 +14,7 @@
       <b-carousel
         id="carousel-fade"
         background="#fff"
-        class="carousel-header w-100 d-none d-lg-block"
+        class="carousel-header w-100 d-none d-lg-block mb-3"
         fade
         indicators
       >
@@ -108,6 +108,7 @@
         id="carousel-fade"
         class="carousel-header d-block d-lg-none"
         fade
+        indicators
       >
         <b-carousel-slide>
           <template #img>
