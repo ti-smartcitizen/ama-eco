@@ -185,6 +185,13 @@
     "send": "Send",
     "msgResponse": "Message sent successfully!"
   },
+  "social": {
+    "intro": "Feed",
+    "title": "Social network",
+    "sub_title": "The AMA social network connects, educates, raises awareness, and engages residents to adopt more sustainable behaviors in their daily lives. We share information, campaigns, and challenges that lead to environmental actions. Come share your experiences with us and serve as an example for your community.",
+    "redirect": "Get to know our case in Florianópolis",
+    "btn": "AMA Floripa"
+  },
   "download": {
     "title": "Download <strong>ama</strong> to your smartphone now",
     "app_ama": "App ama",

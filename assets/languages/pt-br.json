@@ -185,6 +185,13 @@
     "send": "Enviar",
     "msgResponse": "Mensagem enviado com sucesso!"
   },
+  "social": {
+    "intro": "Feed",
+    "title": "Redes Social",
+    "sub_title": "A rede social AMA conecta, educa, conscientiza e engaja os moradores a adotarem comportamentos mais sustentáveis em seu dia a dia. Compartilhamos informações, campanhas e desafios que direcionam para a realização de ações ambientais. Venha conosco compartilhar suas experiências servindo de exemplo para sua comunidade.",
+    "redirect": "Conheça nosso case em Florianópolis",
+    "btn": "AMA Floripa"
+  },
   "download": {
     "title": "Baixe agora o <strong>ama</strong> no seu smartphone",
     "app_ama": "App ama",

@@ -8,11 +8,9 @@
     <main>
       <Intro />
       <Programs />
-      <!-- <HowWork /> -->
+      <HowWork />
       <ODS />
       <Social />
-
-      <!--   Blog
       <div id="blog" class="container blog pt-5">
         <div class="row mb-5">
           <div class="col-12 py-3 text-center">
@@ -60,7 +58,7 @@
             >
           </div>
         </div>
-      </div> -->
+      </div>
     </main>
     <Footer />
   </div>
@@ -70,6 +68,7 @@
 import Hero from '~/components/sections/Hero.vue'
 import Intro from '~/components/sections/Intro.vue'
 import Programs from '~/components/sections/Programs.vue'
+import HowWork from '~/components/sections/HowWork.vue'
 import ODS from '~/components/sections/ODS.vue'
 import Social from '~/components/sections/Social.vue'
 
@@ -79,6 +78,7 @@ export default {
     Intro,
     Programs,
     ODS,
+    HowWork,
     Social,
   },
   data() {
