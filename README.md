@@ -1,9 +1,9 @@
 # ama-eco
 
 Hey
-Contato
+Contato OK
 Header OK
-Footer
+Footer OK
 HowWork
 Banner
 BtnUp

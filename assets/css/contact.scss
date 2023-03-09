@@ -1,0 +1,39 @@
+.contato {
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    color: #131e3b;
+    &::after {
+      content: none;
+    }
+  }
+  input {
+    border: 1px solid #c6c9d0 !important;
+    border-radius: 12px !important;
+  }
+  textarea {
+    border: 1px solid #c6c9d0;
+    border-radius: 12px;
+  }
+  button {
+    color: #fff;
+    border-radius: 8px;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  .subtitle {
+    padding: 24px 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    &::after {
+      content: none;
+    }
+  }
+}

@@ -3,14 +3,14 @@
     <div class="container">
       <div class="row">
         <div class="descricao col-12 col-xl-3">
-          <div class="d-flex justify-content-center">
+          <div class="ama-logo">
             <img
               src="~/assets/logo-rodape.png"
               class="logoFooter"
               width="234"
             />
           </div>
-          <p class="d-flex justify-content-center text-center my-4">
+          <p class="d-flex justify-content-center text-left my-4">
             {{ $store.state.contentFooter.contact.description }}
           </p>
         </div>
@@ -69,7 +69,7 @@
               <img src="../assets/rede-social/twitter-green.svg" alt="" />
             </a>
           </div>
-          <div class="mt-3 d-flex justify-content-center">
+          <div class="loja d-flex justify-content-center">
             <div class="mb-3 mr-3">
               <a
                 href="https://apps.apple.com/br/app/ama-agentes-do-meio-ambiente/id1532303499"
@@ -94,19 +94,19 @@
               alt=""
             />
           </div>
-          <p class="d-flex justify-content-center py-3">
-            Rua Bruno Filgueira, 2434 CEP 80.710-530<br />Bigorrilho - Curitiba
-            - Paraná - Brasil<br />
-          </p>
-          <div
-            class="d-flex flex-column justify-content-center align-items-center"
-          >
-            <a
-              href="https://api.whatsapp.com/send?phone=5541987536283&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20do%20cidade%20ama%2C%20voc%C3%AA%20pode%20me%20ajudar%3F"
-              target="_blank"
-              >+55 41 98753-6283</a
-            >
-            <p>CNPJ: 36.208.711/0001-01</p>
+          <div class="info py-5">
+            <div>
+              <p>
+                Rua Bruno Filgueira, 2434 CEP 80.710-530<br />Bigorrilho -
+                Curitiba - Paraná - Brasil
+              </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=5541987536283&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20do%20cidade%20ama%2C%20voc%C3%AA%20pode%20me%20ajudar%3F"
+                target="_blank"
+                >+55 41 98753-6283</a
+              >
+              <p>CNPJ: 36.208.711/0001-01</p>
+            </div>
           </div>
         </div>
         <div

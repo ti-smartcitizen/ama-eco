@@ -739,6 +739,10 @@ section {
   .borderRight {
     border-left: 1px solid #bfbfbf;
     padding-left: 2rem;
+    @media (max-width: 992px) {
+      border: none;
+      padding: 0 !important;
+    }
   }
 
   label {

@@ -80,6 +80,12 @@ footer {
     font-family: $inter;
     font-size: 14px;
     line-height: 24px;
+    .ama-logo {
+      @media (max-width: 992px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 
   .redes {
@@ -88,6 +94,12 @@ footer {
         svg {
           fill: $verdeAma;
         }
+      }
+    }
+    .loja {
+      margin-top: 32px;
+      @media (max-width: 1200px) {
+        margin: 64px 0;
       }
     }
     li {
@@ -105,6 +117,12 @@ footer {
   .endereco {
     font-weight: 500;
     font-size: 14px;
+    .info {
+      @media (max-width: 1200px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 
   .termos {
