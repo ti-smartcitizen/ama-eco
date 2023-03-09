@@ -25,8 +25,8 @@ export default {
       },
     }
   },
-  beforeMount() {
-    this.getTerms()
+  async beforeMount() {
+    await this.getTerms()
   },
   mounted() {},
   methods: {
@@ -34,6 +34,7 @@ export default {
       await this.$axios
         .get('https://api.amanet.smartcitizen.tec.br/v1/contrato/vigente')
         .then((resposta) => {
+          console.log(resposta.data)
           this.term = resposta.data
         })
     },

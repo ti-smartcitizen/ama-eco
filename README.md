@@ -6,7 +6,7 @@ Header OK
 Footer OK
 HowWork OK
 Banner OK
-BtnUp
+BtnUp OK
 
 Gean
 Hero OK

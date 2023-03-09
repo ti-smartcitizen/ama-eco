@@ -18,12 +18,14 @@
 </template>
 <script>
 if (process.browser) {
-  document.getElementById('btn-up').style.visibility = 'hidden'
-  window.onscroll = function () {
-    if (window.pageYOffset >= 500) {
-      document.getElementById('btn-up').style.visibility = 'visible'
-    } else {
-      document.getElementById('btn-up').style.visibility = 'hidden'
+  if (document.getElementById('btn-up')) {
+    document.getElementById('btn-up').style.visibility = 'hidden'
+    window.onscroll = function () {
+      if (window.pageYOffset >= 500) {
+        document.getElementById('btn-up').style.visibility = 'visible'
+      } else {
+        document.getElementById('btn-up').style.visibility = 'hidden'
+      }
     }
   }
 }
