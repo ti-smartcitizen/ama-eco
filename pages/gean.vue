@@ -7,52 +7,7 @@
     </div>
     <main>
       <Intro />
-      <div id="environmental-programs" class="steps container-fluid">
-        <div
-          class="container h-100 justify-content-center align-items-center d-flex"
-        >
-          <div class="row pt-5 pb-3 d-none d-lg-flex text-center text-lg-left">
-            <div
-              v-for="(item, id) of $store.state.contentSite.home.cards"
-              :key="id + 'A'"
-              class="col-12 col-lg-4 pb-5"
-            >
-              <img
-                :src="require(`~/assets/${item.img}`)"
-                alt=""
-                class="mb-3"
-                height="70"
-              />
-              <h2 v-html="item.title"></h2>
-              <p>{{ item.text }}</p>
-            </div>
-          </div>
-
-          <b-carousel
-            id="carousel-fade"
-            class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 justify-content-center align-items-center"
-            fade
-            indicators
-          >
-            <b-carousel-slide
-              v-for="(item, id) of $store.state.contentSite.home.cards"
-              :key="id + 'B'"
-              class="itemSlideStep"
-            >
-              <template #img>
-                <img
-                  :src="require(`~/assets/${item.img}`)"
-                  alt=""
-                  class="mb-4 mb-lg-3"
-                  height="80"
-                />
-                <h2 class="mb-4 mb-lg-0" v-html="item.title"></h2>
-                <p>{{ item.text }}</p>
-              </template>
-            </b-carousel-slide>
-          </b-carousel>
-        </div>
-      </div>
+      <Programs />
       <div
         id="our-app"
         class="como-funciona container-fluid py-5 align-items-center d-flex"
@@ -298,11 +253,13 @@
 <script>
 import Hero from '~/components/sections/Hero.vue'
 import Intro from '~/components/sections/Intro.vue'
+import Programs from '~/components/sections/Programs.vue'
 
 export default {
   components: {
     Hero,
     Intro,
+    Programs,
   },
   data() {
     return {
