@@ -108,7 +108,8 @@
       }
     ],
     "about_app": {
-      "title": "Como funciona nosso APP?",
+      "mini_title": "Como funciona",
+      "title": "Como funciona nossa plataforma ?",
       "create_account": "<span>Crie sua</span><br /><span>conta <strong>ama</strong></span>",
       "free_download": "Baixe gratuitamente o app nas lojas Apple Store ou Google Play.",
       "join_search": "Participe das nossas pesquisas e tarefas",

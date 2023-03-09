@@ -34,7 +34,6 @@
       "en_US/slide-04.png",
       "en_US/slide-05.png",
       "en_US/slide-06.png"
-
     ],
     "carousel_mobile": [
       "en_US/slide-mobile-01.png",
@@ -109,7 +108,8 @@
       }
     ],
     "about_app": {
-      "title": "How does it work?",
+      "mini_title": "How it works",
+      "title": "How does it work ?",
       "create_account": "<span>Create your <br /><strong>ama</strong> </span><span>account </span>",
       "free_download": "Download our app for free from Google Play and Apple’s App Store.",
       "join_search": "Participate in our research, actions, and tasks",
