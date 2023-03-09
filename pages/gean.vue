@@ -8,135 +8,8 @@
     <main>
       <Intro />
       <Programs />
-      <div
-        id="our-app"
-        class="como-funciona container-fluid py-5 align-items-center d-flex"
-      >
-        <div class="container">
-          <div class="text-center">
-            <div class="row">
-              <div class="col-12">
-                <h1>{{ $store.state.contentSite.home.about_app.title }}</h1>
-              </div>
-            </div>
-            <div class="row p-0 py-lg-5">
-              <div class="col-12 mb-5 mb-lg-0 col-lg-4 align-items-stretch">
-                <div
-                  class="icon d-flex justify-content-center align-items-end align-items-lg-center"
-                >
-                  <img
-                    src="~/assets/crie-sua-conta-ama.jpg"
-                    class="mb-2"
-                    height="175"
-                  />
-                </div>
-                <h2
-                  class="d-flex justify-content-center align-items-center mt-2 mt-lg-0"
-                >
-                  <p
-                    v-html="
-                      $store.state.contentSite.home.about_app.create_account
-                    "
-                  ></p>
-                </h2>
-                <p class="w-75 m-auto">
-                  {{ $store.state.contentSite.home.about_app.free_download }}
-                </p>
-              </div>
-              <div
-                class="col-12 mb-5 mb-lg-0 col-lg-4 justify-content-center align-items-stretch"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-end align-items-lg-center"
-                >
-                  <img
-                    src="~/assets/participe-das-nossas-pesquisas-e-tarefas.jpg"
-                    class="mb-2"
-                    height="175"
-                  />
-                </div>
-                <h2
-                  class="d-flex justify-content-center align-items-center mt-2 mt-lg-0"
-                >
-                  <p>
-                    <span>{{
-                      $store.state.contentSite.home.about_app.join_search
-                    }}</span>
-                  </p>
-                </h2>
-                <p class="w-75 m-auto">
-                  {{ $store.state.contentSite.home.about_app.remunerated_job }}
-                </p>
-              </div>
-              <div
-                class="col-12 col-lg-4 mb-0 mb-lg-0 justify-content-center align-items-stretch"
-              >
-                <div
-                  class="icon d-flex justify-content-center align-items-end align-items-lg-center"
-                >
-                  <img src="~/assets/deu-cash.jpg" class="mb-2" height="175" />
-                </div>
-                <h2
-                  class="d-flex justify-content-center align-items-center mt-2 mt-lg-0"
-                >
-                  <p
-                    v-html="$store.state.contentSite.home.about_app.get_cash"
-                  ></p>
-                </h2>
-                <p class="w-75 m-auto">
-                  {{ $store.state.contentSite.home.about_app.acumulate_points }}
-                </p>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-12">
-                <a href="/download-ama">{{
-                  $store.state.contentSite.home.about_app.download_now
-                }}</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--<div class="container-fluid">
-        <div class="row">
-          <iframe
-            width="100%"
-            height="890"
-            class="video"
-            src="https://www.youtube.com/embed/vbpHlbU6NYQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-       container fluid -->
-
-      <div class="container-fluid tarefasODS">
-        <div class="row h-100">
-          <div class="container">
-            <div
-              class="row justify-content-center align-items-lg-center h-100 bgVerde"
-            >
-              <div class="d-none d-lg-flex col col-lg-7"></div>
-              <div class="col-12 col-lg-5">
-                <h1 class="mb-3 mb-lg-5 mx-auto pl-4">
-                  {{ $store.state.contentSite.home.jobs_ods.title }}
-                </h1>
-                <h3 class="w-100 w-lg-75 mb-3 mb-lg-5 mx-auto">
-                  {{ $store.state.contentSite.home.jobs_ods.sub_title }}
-                </h3>
-                <p class="w-100 w-lg-75 mb-3 mx-auto">
-                  {{ $store.state.contentSite.home.jobs_ods.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- <HowWork /> -->
+      <ODS />
 
       <div id="blog" class="container blog pt-5">
         <div class="row mb-5">
@@ -254,12 +127,14 @@
 import Hero from '~/components/sections/Hero.vue'
 import Intro from '~/components/sections/Intro.vue'
 import Programs from '~/components/sections/Programs.vue'
+import ODS from '~/components/sections/ODS.vue'
 
 export default {
   components: {
     Hero,
     Intro,
     Programs,
+    ODS,
   },
   data() {
     return {

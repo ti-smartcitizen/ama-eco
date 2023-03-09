@@ -10,7 +10,10 @@
       </div>
       <div class="col-12 col-lg-6 text-container align-items-lg-center">
         <div class="text-lg-left">
-          <div class="sub-title">Mock</div>
+          <div
+            class="sub-title"
+            v-html="$store.state.contentSite.home.about.sub"
+          ></div>
           <div
             class="lh-1 mb-4 section-title"
             v-html="$store.state.contentSite.home.about.title"
