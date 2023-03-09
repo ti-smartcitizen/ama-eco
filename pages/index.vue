@@ -11,6 +11,11 @@
       <HowWork />
       <ODS />
       <Social />
+      <div
+        class="banner d-lg-flex d-xxl-flex justify-content-center px-2 px-lg-5 px-xxl-5 py-5"
+      >
+        <Banner />
+      </div>
       <Blog />
     </main>
     <Footer />
