@@ -3,7 +3,9 @@
     <div id="blog" class="container blog pt-5">
       <div class="row mb-5">
         <div class="col-12 py-3 text-center">
-          <h1 class="mx-5">{{ $store.state.contentSite.home.blog.title }}</h1>
+          <div class="mx-5 blog-title">
+            {{ $store.state.contentSite.home.blog.title }}
+          </div>
         </div>
       </div>
       <div v-for="(item, id) of posts" :key="id" class="row mb-0 mx-0 mx-lg-5">
@@ -58,20 +60,15 @@ export default {
     this.$axios
       .$get('https://blog.cidadeama.com.br/wp-json/wp/v2/posts')
       .then((res) => {
-        this.posts.push({
-          ...res[0],
-          categoria: null,
-          thumb: null,
+        res.forEach((item, index) => {
+          this.posts.push({
+            ...res[index],
+            categoria: null,
+            thumb: null,
+          })
+          this.getCategoriaPost(res[index].categories[0], index)
+          this.getThumbPost(res[index].featured_media, index)
         })
-        this.posts.push({
-          ...res[1],
-          categoria: null,
-          thumb: null,
-        })
-        this.getCategoriaPost(res[0].categories[0], 0)
-        this.getThumbPost(res[0].featured_media, 0)
-        this.getCategoriaPost(res[1].categories[0], 1)
-        this.getThumbPost(res[1].featured_media, 1)
       })
   },
   methods: {
@@ -103,7 +100,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.test {
-  color: red;
+.blog-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  text-align: center;
+  color: #131e3b;
 }
 </style>
