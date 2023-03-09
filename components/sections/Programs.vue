@@ -37,7 +37,7 @@
 
       <b-carousel
         id="carousel-fade"
-        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 justify-content-center align-items-center"
+        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 pt-5 justify-content-center align-items-center"
         fade
         indicators
       >
