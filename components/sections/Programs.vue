@@ -93,11 +93,12 @@ export default {
   },
   methods: {
     openModal(item) {
+      console.log(item)
       this.modalType = {
-        title: 'teste',
-        text: 'No Feed publicamos periodicamente informações relacionadas a educação e preservação ambiental e limpeza urbana, disponíveispara redes de vizinhos de cada microárea das cidades onde atuamos.',
-        svg: 'feed',
-        img: 'modal-1.png',
+        title: item.title,
+        text: item.modalText,
+        svg: item.modalSvg,
+        img: item.modalImg,
       }
       this.showModal = true
     },

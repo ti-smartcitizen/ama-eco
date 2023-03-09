@@ -58,34 +58,52 @@
     },
     "cards": [
       {
+        "modalText": "No Feed publicamos periodicamente informações relacionadas a educação e preservação ambiental e limpeza urbana, disponíveis para redes de vizinhos de cada microárea das cidades onde atuamos. É pelo Feed também que os AMAs (Agentes do Meio Ambiente) podem compartilhar suas ações, interagir, curtir e comentar os posts publicados.",
+        "modalImg": "modal-1.png",
+        "modalSvg": "feed",
         "img": "inspira-educa-engaja.png",
-        "title": "Inspira, educa<br /> e engaja",
-        "text": "Organizamos a cidade em microáreas urbanas. Estabelecemos lideranças locais, que estimulam bons hábitos relativos à limpeza, saúde e educação ambiental."
+        "title": "Feed",
+        "text": "É a Rede Social AMA, com muito conteúdo informativo produzidos pela equipe de  comunicação do AMA e onde os AMAs (Agentes do Meio Ambiente) compartilham suas ações ambientais."
       },
       {
+        "modalText": "Clicando em Ações, o AMA (Agente do Meio Ambiente) terá acesso a cards com sugestões de atividades e pesquisas em que poderá participar. Cada participação rende pontos para um ranking que premia os melhores colocados por ciclos e temporadas, além valores em dinheiro (cashback sutentável) de acordo com a complexidade de cada atividade.",
+        "modalImg": "modal-2.png",
+        "modalSvg": "actions",
         "img": "tarefas-ods.png",
-        "title": "Tarefas<br />ODS",
-        "text": " Atividades simples de educação ambiental alinhadas aos Objetivos do Desenvolvimento Sustentável da ONU, Agenda 2030."
+        "title": "Ações",
+        "text": " É onde estão disponíveis as sugestões de atividades e participação em pesquisas relacionadas à cidade onde os AMAs (Agentes do Meio Ambiente) residem. Essas atividades são divididas por temporadas, ciclos e semanas."
       },
       {
+        "modalText": "A avaliação da Sua Rua por parte dos AMAs (Agentes do Meio Ambiente) é importante para que possamos entender os maiores anseios e necessidades de cada microárea mapeada. É também por onde os AMAs poderão avaliar a qualidade das atividades realizadas pelo Líder Local selecionado como responsável por aquela região.",
+        "modalImg": "modal-3.png",
+        "modalSvg": "street",
         "img": "cashback-sustentavel.png",
-        "title": "Cashback<br />Sustentável",
-        "text": "Todas nossas atividades geram pontos e ganhos em dinheiro para estimular a prática ambiental."
+        "title": "Sua Rua",
+        "text": "Cada AMA (Agente do Meio Ambiente) pode avaliar semanalmente as condições da rua onde reside, dando notas de 1 até 5 estrelas em cada card disponível."
       },
       {
+        "modalText": "Ao criar a sua Conta Digital AMA, os AMAs (Agentes do Meio Ambiente) passam a receber os valores referentes as atividades realizadas. Da mesma forma o Líder Local recebe a sua remuneração mensal. O saldo da Conta Digital AMA pode ser transferido para uma conta bancária de mesma titularidade, para a conta de outro AMA (Agente do Meio Ambiente) ou utilizado para pagamentos de produtos e serviços cadastrados na Rede de parceiros AMA.",
+        "modalImg": "modal-4.png",
+        "modalSvg": "account",
         "img": "ranking-da-sustentabilidade.png",
-        "title": "Ranking da<br />Sustentabilidade",
-        "text": "Cada tarefa, ação ou pesquisa concluída também te ajuda a crescer de nível dentro da plataforma."
+        "title": "Conta",
+        "text": "É por meio da Conta Digital AMA que os AMAs (Agentes do Meio Ambiente) recebem valores em dinheiro por atividades realizadas entre outras funcionalidades."
       },
       {
+        "modalText": "Os estabelecimentos comerciais, produtos e serviços cadastrados na plataforma AMA são específicos para cada cidade onde atuamos. O AMA (Agente do Meio Ambiente) poderá realizar pagamentos ao consumir determinado produto ou serviço com o saldo disponível em sua Conta Digital AMA.",
+        "modalImg": "modal-5.png",
+        "modalSvg": "network",
         "img": "rede-social-de-vizinhos.png",
-        "title": "Redes social<br />de vizinhos",
-        "text": "Conectamos pessoas da comunidade local para que compartilhem suas conquistas sustentáveis, incentivem mais vizinhos e divulguem seus produtos e serviços."
+        "title": "Rede",
+        "text": "É onde você vai encontrar a Rede de estabelecimentos comerciais, produtos e serviços cadastrados como parceiros da plataforma AMA. "
       },
       {
+        "modalText": "O Líder Local exerce atividades de educação e preservação ambiental, limpeza e manutenção urbana da microárea em que é responsável, sendo remunerado mensalmente para isso. Tudo é registrado via aplicativo, seus vizinhos e a Prefeitura podem acompanhar remotamente.",
+        "modalImg": "modal-6.png",
+        "modalSvg": "lead",
         "img": "logistica-reversa.png",
-        "title": "Logística<br />Reversa",
-        "text": "Ao estimular a separação dos resíduos e a entrega voluntária remunerada nos pontos de coleta, asseguramos a correta destinação dos materiais recicláveis."
+        "title": "Líder Local",
+        "text": "O Líder Local é uma AMA (Agente do Meio Ambiente) selecionado para ser o responsável por uma microárea nas imediações de onde reside."
       }
     ],
     "about_app": {
