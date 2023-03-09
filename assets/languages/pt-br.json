@@ -131,6 +131,16 @@
     "localization": {
       "title": "onde estamos",
       "sub_title": "Veja no mapa onde multiplicamos <br />comportamentos sustentáveis."
+    },
+    "banner": {
+      "title": "Nossas redes sociais",
+      "ytDescription": "Em nosso canal do YouTube você vai descobrir mais sobre o que fazemos e como podemos colaborar para um mundo mais sustentável. Aqui, você encontrará vídeos informativos sobre nossas atividades. Inscreva-se em nosso canal para aprender mais sobre pequenas e transformadoras atitudes.",
+      "fbDescription": "A nossa página do Facebook é uma ferramenta valiosa para divulgarmos esforços e iniciativas ambientais para um público mais amplo. Compartilhamos informações sobre práticas sustentáveis, postamos atualizações sobre projetos, notícias e artigos relevantes.",
+      "igDescription": "Em nosso Instagram compartilhamos informações, iniciativas e atualizações sobre práticas sustentáveis. Destacamos atividades realizadas pelos usuários do aplicativo aumentando inspirando outros a adotarem práticas mais responsáveis com o meio ambiente.",
+      "lnDescription": "Nosso LinkedIn é uma ferramenta valiosa para promover a sustentabilidade. Nos permite um alcance amplo e diversificado, incluindo profissionais e empresas que compartilham dos mesmos valores, objetivos e iniciativas de responsabilidade social.",
+      "ttDescription": "Em nosso Twitter compartilhamos atualizações sobre nossas ações sustentáveis, iniciativas de responsabilidade social e boas práticas ambientais. Acompanhe nossas notícias e dicas para se conectar com nossos valores e juntos, vamos criar um mundo mais sustentável!",
+      "tkDescription": "Utilizamos o TikTok para publicar vídeos curtos e divertidos que informem, inspirem e eduquem sobre a importância de adotar práticas sustentáveis. Dicas e exemplos de que possam fazer parte da rotina das pessoas, e que sirvam de exemplo para toda comunidade",
+      "seeMore": "Veja mais."
     }
   },
   "contact": {

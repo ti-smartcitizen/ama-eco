@@ -131,6 +131,16 @@
     "localization": {
       "title": "where we are",
       "sub_title": "Our presence grows together <br />with environmental awareness."
+    },
+    "banner": {
+      "title": "Our Social Networks",
+      "ytDescription": "On our YouTube channel you will find out more about what we do and how we can collaborate for a more sustainable world. Here, you will find informative videos about our activities. Subscribe to our channel to learn more about small, transformative attitudes.",
+      "fbDescription": "Our Facebook page is a valuable tool for us to disseminate environmental efforts and initiatives to a wider audience. We share information about sustainable practices, post project updates, news and relevant articles.",
+      "igDescription": "On our Instagram we share information, initiatives and updates on sustainable practices. We highlight activities carried out by users of the application increasing inspiring others to adopt more environmentally responsible practices. ",
+      "lnDescription": "Our LinkedIn is a valuable tool for promoting sustainability. It allows us a broad and diverse reach, including professionals and companies that share the same values, goals and social responsibility initiatives.",
+      "ttDescription": "On our Twitter we share updates about our sustainable actions, social responsibility initiatives and good environmental practices. Follow our news and tips to connect with our values and together, let's create a more sustainable world!",
+      "tkDescription": "We use TikTok to publish short, entertaining videos that inform, inspire and educate about the importance of adopting sustainable practices. Tips and examples that can be part of people's routine, and serve as an example for the whole community.",
+      "seeMore": "See more."
     }
   },
   "contact": {

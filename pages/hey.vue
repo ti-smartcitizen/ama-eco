@@ -84,22 +84,6 @@
         <HowWorks />
       </div>
 
-      <!--<div class="container-fluid">
-        <div class="row">
-          <iframe
-            width="100%"
-            height="890"
-            class="video"
-            src="https://www.youtube.com/embed/vbpHlbU6NYQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-       container fluid -->
-
       <div class="container-fluid tarefasODS">
         <div class="row h-100">
           <div class="container">
@@ -123,57 +107,10 @@
         </div>
       </div>
 
-      <div id="blog" class="container blog pt-5">
-        <div class="row mb-5">
-          <div class="col-12 py-3 text-center">
-            <h1 class="mx-5">{{ $store.state.contentSite.home.blog.title }}</h1>
-          </div>
-        </div>
-        <!-- row -->
-        <div
-          v-for="(item, id) of posts"
-          :key="id"
-          class="row mb-0 mx-0 mx-lg-5"
-        >
-          <div class="col-12 blogpost">
-            <div class="thumbnail">
-              <img :src="item.thumb" class="d-block img-fluid" loading="lazy" />
-            </div>
-            <div class="card p-3 border-0">
-              <div class="card-body">
-                <p class="card-text">
-                  {{ dataAtualFormatada(item.date) }} |
-                  <span class="categoria">{{ item.categoria }}</span>
-                </p>
-                <h2>
-                  <a :href="item.link" target="_blank">{{
-                    item.title.rendered
-                  }}</a>
-                </h2>
-                <p v-html="item.excerpt.rendered"></p>
-                <a :href="item.link" target="_blank"
-                  >{{ $store.state.contentSite.home.blog.read_more }}
-                  <b-icon icon="arrow-right" size="1"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--row-->
-      </div>
-      <!-- container -->
-      <div class="container">
-        <div class="row">
-          <div class="col-12 my-2 my-lg-0 text-center">
-            <a
-              href="https://blog.cidadeama.com.br/"
-              target="_blank"
-              class="veja_mais_posts mx-auto"
-              >{{ $store.state.contentSite.home.blog.most_posts }}</a
-            >
-          </div>
-        </div>
-        <hr />
+      <div
+        class="banner d-lg-flex d-xxl-flex justify-content-center px-2 px-lg-5 px-xxl-5 py-5"
+      >
+        <Banner />
       </div>
     </main>
     <Footer />
@@ -182,9 +119,11 @@
 
 <script>
 import HowWorks from '../components/sections/HowWork.vue'
+import Banner from '../components/Banner.vue'
 export default {
   components: {
     HowWorks,
+    Banner,
   },
   data() {
     return {
