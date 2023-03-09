@@ -17,6 +17,7 @@
       id="carousel-fade"
       class="carousel-header d-block d-lg-none"
       fade
+      indicators
     >
       <b-carousel-slide
         v-for="(item, id) of $store.state.contentHeader.carousel_mobile"

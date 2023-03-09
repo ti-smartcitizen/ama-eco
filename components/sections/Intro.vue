@@ -17,12 +17,20 @@
             v-html="$store.state.contentSite.home.about.sub"
           ></div>
           <div
-            class="lh-1 mb-4 section-title"
+            class="mb-3 section-title"
             v-html="$store.state.contentSite.home.about.title"
           ></div>
           <p
             class="intro-content"
-            v-html="$store.state.contentSite.home.about.desc"
+            v-html="$store.state.contentSite.home.about.desc1"
+          ></p>
+          <p
+            class="intro-content"
+            v-html="$store.state.contentSite.home.about.desc2"
+          ></p>
+          <p
+            class="intro-content"
+            v-html="$store.state.contentSite.home.about.desc3"
           ></p>
         </div>
       </div>
@@ -42,7 +50,7 @@
   .intro-img {
     width: 72%;
     right: 0;
-    top: 12%;
+    top: 11%;
     position: absolute;
   }
 }
@@ -52,7 +60,6 @@
   justify-content: flex-start;
   background: #fff;
   padding-left: 64px;
-  position: relative;
 
   .sub-title {
     font-family: 'Poppins', sans-serif;
@@ -60,7 +67,7 @@
     font-size: 20px;
     line-height: 132%;
     color: #2157cc;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .section-title {
@@ -77,22 +84,25 @@
     font-size: 18px;
     line-height: 185%;
     color: #565e73;
+    margin-bottom: 24px;
   }
 }
 
-/* <992px */
 @media (max-width: 991.98px) {
   .img-container {
     justify-content: center;
 
     .intro-img {
       position: relative;
-      width: 326px;
+      top: 20px;
+      width: 88%;
     }
   }
 
   .text-container {
     padding: 32px;
+    padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 </style>

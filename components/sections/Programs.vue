@@ -12,7 +12,7 @@
           class="col-12 col-lg-4 pb-5 mt-5"
         >
           <div class="d-flex align-items-center">
-            <SVGFactory :svg="item.modalSvg" />
+            <SVGFactory :svg="item.modalSvg" color="#fff" />
             <h2 class="svg-title ml-4" v-html="item.title"></h2>
           </div>
 
@@ -37,9 +37,8 @@
 
       <b-carousel
         id="carousel-fade"
-        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 pt-5 justify-content-center align-items-center"
+        class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 pt-5 pb-5 justify-content-center align-items-center"
         fade
-        indicators
       >
         <b-carousel-slide
           v-for="(item, id) of $store.state.contentSite.home.cards"
@@ -48,7 +47,7 @@
         >
           <template #img>
             <div class="d-flex align-items-center">
-              <SVGFactory :svg="item.modalSvg" />
+              <SVGFactory :svg="item.modalSvg" color="#fff" />
               <h2 class="svg-title ml-4" v-html="item.title"></h2>
             </div>
             <p class="mt-4 main-text">{{ item.text }}</p>
@@ -103,7 +102,7 @@ export default {
 
 <style scoped lang="scss">
 .list-programs {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 .btn-svg {

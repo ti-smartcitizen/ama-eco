@@ -55,7 +55,9 @@
     "about": {
       "sub": "Sobre",
       "title": "Olá, somos o <br /> AMA!",
-      "desc": "Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. Sabemos que grandes mudanças começam com pequenas atitudes e é dentro da nossa casa que o cuidado aparece primeiro.<br /><br />Não paramos por aí! O que gente quer mesmo, é ver o maior número de pessoas engajadas na causa conosco. Vamos cuidar da nossa quadra, dos nossos arredores e se conseguirmos as pessoas a fazerem o mesmo, podemos impactar toda a nossa cidade.<br /><br />Sabemos que não podemos controlar o clima, mas podemos controlar nossas escolhas. Cada ação que tomamos para reduzir as emissões de CO2 é um passo importante para conseguirmos alcançar uma real mudança."
+      "desc1": "Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. Sabemos que grandes mudanças começam com pequenas atitudes e é dentro da nossa casa que o cuidado aparece primeiro.",
+      "desc2": "Não paramos por aí! O que gente quer mesmo, é ver o maior número de pessoas engajadas na causa conosco. Vamos cuidar da nossa quadra, dos nossos arredores e se conseguirmos as pessoas a fazerem o mesmo, podemos impactar toda a nossa cidade.",
+      "desc3": "Sabemos que não podemos controlar o clima, mas podemos controlar nossas escolhas. Cada ação que tomamos para reduzir as emissões de CO2 é um passo importante para conseguirmos alcançar uma real mudança."
     },
     "cards": [
       {
@@ -124,7 +126,7 @@
       "description": "Todas as atividades são inspiradas nos 17 Objetivos de Desenvolvimento Sustentável da ONU e vêm acompanhadas por uma descrição e um card, ou vídeo explicativo, além do valor de pontos e recompensas. Ao compartilhar a realização de uma atividade no Feed, o usuário motiva outros usuários a promoverem a conscientização sobre questões importantes relacionadas ao desenvolvimento sustentável."
     },
     "blog": {
-      "title": "Blog do ama",
+      "title": "AMA Blog",
       "read_more": "leia mais",
       "most_posts": "Veja mais posts"
     },
@@ -192,6 +194,13 @@
     "message": "Mensagem",
     "send": "Enviar",
     "msgResponse": "Mensagem enviado com sucesso!"
+  },
+  "social": {
+    "intro": "Feed",
+    "title": "Redes Social",
+    "sub_title": "A rede social AMA conecta, educa, conscientiza e engaja os moradores a adotarem comportamentos mais sustentáveis em seu dia a dia. Compartilhamos informações, campanhas e desafios que direcionam para a realização de ações ambientais. Venha conosco compartilhar suas experiências servindo de exemplo para sua comunidade.",
+    "redirect": "Conheça nosso case em Florianópolis",
+    "btn": "AMA Floripa"
   },
   "download": {
     "title": "Baixe agora o <strong>ama</strong> no seu smartphone",

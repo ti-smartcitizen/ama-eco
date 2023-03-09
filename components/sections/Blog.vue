@@ -1,0 +1,129 @@
+<template>
+  <div>
+    <div id="blog" class="container blog pt-5">
+      <div class="row mb-5">
+        <div class="col-12 py-3 text-center">
+          <div class="mx-5 blog-title">
+            {{ $store.state.contentSite.home.blog.title }}
+          </div>
+        </div>
+      </div>
+      <div class="posts-container">
+        <div v-for="(item, id) of posts" :key="id">
+          <div class="blogpost">
+            <div class="thumbnail">
+              <img :src="item.thumb" class="d-block img-fluid" loading="lazy" />
+            </div>
+            <div class="card p-3 border-0">
+              <div class="card-body">
+                <p class="card-text">
+                  {{ dataAtualFormatada(item.date) }} |
+                  <span class="categoria">{{ item.categoria }}</span>
+                </p>
+                <h2>
+                  <a :href="item.link" target="_blank">{{
+                    item.title.rendered
+                  }}</a>
+                </h2>
+                <p v-html="item.excerpt.rendered"></p>
+                <a :href="item.link" target="_blank"
+                  >{{ $store.state.contentSite.home.blog.read_more }}
+                  <b-icon icon="arrow-right" size="1"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-2 my-lg-0 text-center">
+          <a
+            href="https://blog.cidadeama.com.br/"
+            target="_blank"
+            class="veja_mais_posts mx-auto"
+            >{{ $store.state.contentSite.home.blog.most_posts }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      posts: [],
+    }
+  },
+  beforeMount() {
+    this.$axios
+      .$get('https://blog.cidadeama.com.br/wp-json/wp/v2/posts')
+      .then((res) => {
+        res.forEach((item, index) => {
+          this.posts.push({
+            ...res[index],
+            categoria: null,
+            thumb: null,
+          })
+          this.getCategoriaPost(res[index].categories[0], index)
+          this.getThumbPost(res[index].featured_media, index)
+        })
+      })
+  },
+  methods: {
+    async getCategoriaPost(id, key) {
+      await this.$axios
+        .get('https://blog.cidadeama.com.br/wp-json/wp/v2/categories/' + id)
+        .then((resposta) => {
+          this.posts[key].categoria = resposta.data.name
+        })
+    },
+    async getThumbPost(id, key) {
+      await this.$axios
+        .get('https://blog.cidadeama.com.br/wp-json/wp/v2/media/' + id)
+        .then((resposta) => {
+          this.posts[key].thumb = resposta.data.source_url
+        })
+    },
+    dataAtualFormatada(valor) {
+      const data = new Date(valor)
+      const dia = data.getDate().toString()
+      const diaF = dia.length === 1 ? '0' + dia : dia
+      const mes = (data.getMonth() + 1).toString() // +1 pois no getMonth Janeiro começa com zero.
+      const mesF = mes.length === 1 ? '0' + mes : mes
+      const anoF = data.getFullYear()
+      return diaF + '/' + mesF + '/' + anoF
+    },
+  },
+}
+</script>
+
+<style scoped lang="scss">
+.blog-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  text-align: center;
+  color: #131e3b;
+}
+
+.blogpost {
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+</style>

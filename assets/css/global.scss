@@ -124,20 +124,6 @@ $spaceUnit: 4px;
     }
   }
 
-  .blogpost {
-    padding: 0 !important;
-
-    .thumbnail {
-      max-width: 100% !important;
-    }
-
-    .card {
-      position: relative !important;
-      max-width: 100% !important;
-      top: 20px !important;
-    }
-  }
-
   .tarefasODS {
     background-size: 100vh !important;
     background-position: -100px bottom !important;
@@ -184,10 +170,12 @@ $spaceUnit: 4px;
 /* FIM MOBILE */
 
 main {
-  background: #f8f8f8;
+  background: #fff;
 }
 
 .programas {
+  height: 100vh;
+
   .olaPrograma {
     background: #e8e8e8;
 
@@ -418,83 +406,6 @@ section {
     font-size: 55px;
     line-height: 50px;
     color: $verdeAma;
-  }
-
-  .blogpost {
-    //margin-top: -75px;
-    padding-right: 32px;
-    padding-left: 32px;
-    border-radius: 8px;
-    position: relative;
-    margin-bottom: 50px;
-
-    .thumbnail {
-      display: block;
-      max-width: 75%;
-      max-height: 420px;
-      min-height: 420px;
-      overflow: hidden;
-      border-radius: 10px;
-
-      img {
-        max-width: 100%;
-        height: auto;
-        box-shadow: 1px 10px 10px rgb(0 0 0 / 16%);
-      }
-    }
-
-    .card {
-      border-radius: 10px;
-      max-width: 50%;
-      position: absolute;
-      right: 0;
-      top: 33px;
-      box-shadow: 1px 10px 10px rgb(0 0 0 / 16%);
-
-      .card-text {
-        font-family: $serif;
-        font-style: normal;
-        font-weight: $regular-weight;
-        font-size: 12px;
-        line-height: 24px;
-        color: #6e7078;
-
-        span.categoria {
-          color: $verdeAma;
-        }
-      }
-
-      h2 {
-        a {
-          color: $azulAma;
-          font-family: $sans-serif;
-          font-style: normal;
-          font-weight: $bold-weight;
-          font-size: 31px;
-        }
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 27px;
-        font-family: $serif;
-        font-style: normal;
-        font-weight: $regular-weight;
-      }
-
-      a {
-        font-family: $sans-serif;
-        font-style: normal;
-        font-weight: $bold-weight;
-        font-size: 16px;
-        text-align: center;
-        color: $azulAma;
-
-        .b-icon {
-          color: $verdeAma;
-        }
-      }
-    }
   }
 }
 

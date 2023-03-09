@@ -55,7 +55,9 @@
     "about": {
       "sub": "About",
       "title": "Hello, we're <br /> AMA!",
-      "desc": "We form a collaborative network that multiplies sustainable behavior. We know that big changes start with small attitudes, and it is inside our homes that care appears first.<br/><br/>We do not stop there! What we really want is to see as many people as possible engaged in the cause with us. Let's take care of our court, our surroundings, and if we get people to do the same, we can impact our whole city.<br/><br/>We know we can't control the climate, but we can control our choices. Every action we take to reduce CO2 emissions is an important step towards achieving real change.<br />"
+      "desc1": "We form a collaborative network that multiplies sustainable behavior. We know that big changes start with small attitudes, and it is inside our homes that care appears first.",
+      "desc2": "We do not stop there! What we really want is to see as many people as possible engaged in the cause with us. Let's take care of our court, our surroundings, and if we get people to do the same, we can impact our whole city.",
+      "desc3": "We know we can't control the climate, but we can control our choices. Every action we take to reduce CO2 emissions is an important step towards achieving real change."
     },
     "cards": [
       {
@@ -124,7 +126,7 @@
       "description": "All activities are inspired by the 17 UN Sustainable Development Goals and are accompanied by a description and an explanatory card, or video, as well as the value of points and rewards. By sharing the completion of an activity in the Feed, the user motivates other users to raise awareness about important issues related to sustainable development."
     },
     "blog": {
-      "title": "ama blog",
+      "title": "AMA Blog",
       "read_more": "Learn More",
       "most_posts": "See more"
     },
@@ -192,6 +194,13 @@
     "message": "Message",
     "send": "Send",
     "msgResponse": "Message sent successfully!"
+  },
+  "social": {
+    "intro": "Feed",
+    "title": "Social network",
+    "sub_title": "The AMA social network connects, educates, raises awareness, and engages residents to adopt more sustainable behaviors in their daily lives. We share information, campaigns, and challenges that lead to environmental actions. Come share your experiences with us and serve as an example for your community.",
+    "redirect": "Get to know our case in Florianópolis",
+    "btn": "AMA Floripa"
   },
   "download": {
     "title": "Download <strong>ama</strong> to your smartphone now",

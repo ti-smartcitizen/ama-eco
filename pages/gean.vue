@@ -8,16 +8,15 @@
     <main>
       <Intro />
       <Programs />
-      <!-- <HowWork /> -->
+      <HowWork />
       <ODS />
-
+      <Social />
       <div id="blog" class="container blog pt-5">
         <div class="row mb-5">
           <div class="col-12 py-3 text-center">
             <h1 class="mx-5">{{ $store.state.contentSite.home.blog.title }}</h1>
           </div>
         </div>
-        <!-- row -->
         <div
           v-for="(item, id) of posts"
           :key="id"
@@ -47,9 +46,7 @@
             </div>
           </div>
         </div>
-        <!--row-->
       </div>
-      <!-- container -->
       <div class="container">
         <div class="row">
           <div class="col-12 my-2 my-lg-0 text-center">
@@ -61,62 +58,6 @@
             >
           </div>
         </div>
-        <hr />
-      </div>
-      <!-- container -->
-      <div id="where-we-are" class="container ondeestamos my-5 text-center">
-        <div class="row">
-          <div class="col-12 mb-1">
-            <h3>{{ $store.state.contentSite.home.localization.title }}</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h1 v-html="$store.state.contentSite.home.localization.sub_title" />
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <GmapMap
-            :center="{ lat: -25.43432, lng: -49.2638 }"
-            :zoom="7"
-            map-type-id="roadmap"
-            style="width: 100%; height: 550px"
-            :options="{
-              zoomControl: false,
-              mapTypeControl: false,
-              scaleControl: false,
-              streetViewControl: false,
-              rotateControl: true,
-              fullscreenControl: false,
-              disableDefaultUi: true,
-            }"
-          >
-            <GmapMarker
-              v-for="(i, idx) in pins"
-              :key="'PIN' + idx"
-              :ref="`marker${idx}`"
-              :position="{
-                lat: Number(i.lat),
-                lng: Number(i.lng),
-              }"
-              :clickable="false"
-              :draggable="false"
-              :icon="markerOptions"
-            />
-            <!-- <GmapCustomMarker
-              v-for="(i, idx) in pins"
-              :key="'PIN' + idx"
-              ref="Cidades"
-              class="markerGoogle Cidades"
-              :draggable="false"
-              :marker="{ lat: i.cidade_lat, lng: i.cidade_lng }"
-            >
-              <img src="~/assets/pin_mapa.png" height="30" />
-            </GmapCustomMarker> -->
-          </GmapMap>
-        </div>
       </div>
     </main>
     <Footer />
@@ -127,7 +68,9 @@
 import Hero from '~/components/sections/Hero.vue'
 import Intro from '~/components/sections/Intro.vue'
 import Programs from '~/components/sections/Programs.vue'
+import HowWork from '~/components/sections/HowWork.vue'
 import ODS from '~/components/sections/ODS.vue'
+import Social from '~/components/sections/Social.vue'
 
 export default {
   components: {
@@ -135,6 +78,8 @@ export default {
     Intro,
     Programs,
     ODS,
+    HowWork,
+    Social,
   },
   data() {
     return {
