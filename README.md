@@ -5,7 +5,7 @@ Contato OK
 Header OK
 Footer OK
 HowWork OK
-Banner  
+Banner OK
 BtnUp
 
 Gean

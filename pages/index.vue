@@ -19,6 +19,7 @@
       <Blog />
     </main>
     <Footer />
+    <BtnUp />
   </div>
 </template>
 
@@ -30,6 +31,7 @@ import HowWork from '~/components/sections/HowWork.vue'
 import ODS from '~/components/sections/ODS.vue'
 import Social from '~/components/sections/Social.vue'
 import Blog from '~/components/sections/Blog.vue'
+import BtnUp from '~/components/BtnUp.vue'
 
 export default {
   components: {
@@ -40,6 +42,7 @@ export default {
     HowWork,
     Social,
     Blog,
+    BtnUp,
   },
 }
 </script>
