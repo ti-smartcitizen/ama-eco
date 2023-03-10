@@ -206,11 +206,11 @@ export default {}
   font-size: 14px;
   line-height: 132%;
   text-align: center;
-  text-decoration-line: underline;
+  text-decoration: underline;
   color: #fff;
 
   &:hover {
-    color: #fff;
+    color: #8acc0d;
     text-decoration: none;
   }
 }
