@@ -31,7 +31,7 @@
               <p class="address">CNPJ: 36.208.711/0001-01</p>
             </div>
           </div>
-          <div style="padding: 0 64px" class="col-12 col-lg-7">
+          <div style="padding: 0 52px" class="col-12 col-lg-7">
             <div class="borderRight">
               <label for="name"
                 ><span v-if="error.name" class="error">{{
@@ -106,7 +106,11 @@
                 {{ $store.state.contentSite.contact.msgResponse }}
               </p>
 
-              <button class="ml-auto" :disabled="disabled" @click="send">
+              <button
+                class="ml-auto btn-local"
+                :disabled="disabled"
+                @click="send"
+              >
                 {{ $store.state.contentSite.contact.send }}
                 <span v-if="loading">
                   <img
@@ -243,5 +247,13 @@ export default {
   font-size: 14px;
   line-height: 156%;
   color: #131e3b;
+}
+
+.btn-local {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
 }
 </style>
