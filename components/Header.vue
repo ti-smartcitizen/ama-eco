@@ -32,13 +32,13 @@
             <b-nav-item
               v-for="(item, id) of $store.state.contentHeader.menu"
               :key="id + 'menu'"
-              class="mr-3"
+              class="mr-3 mobile-menu"
               :href="item.link"
-              >{{ item.desc }}</b-nav-item
+              ><span class="mobile-menu">{{ item.desc }}</span></b-nav-item
             >
           </b-navbar-nav>
 
-          <b-navbar-nav class="ml-auto">
+          <b-navbar-nav class="ml-auto mobile-flags">
             <b-nav-item
               class="custom-flag"
               :class="$store.state.localStorage.languageActive == 1 && 'active'"
@@ -53,7 +53,7 @@
             /></b-nav-item>
           </b-navbar-nav>
 
-          <b-navbar-nav class="mt-4 ml-auto d-block d-xl-none">
+          <b-navbar-nav class="mt-4 ml-auto d-block d-xl-none mobile-bottom">
             <div>
               <a
                 class="ml-3"
@@ -153,6 +153,27 @@ export default {
 @media (max-width: 991px) {
   .custom-container {
     padding: 0;
+  }
+
+  .mobile-menu {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 32px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.011em !important;
+    color: #565e73 !important;
+    margin-top: 18px !important;
+  }
+
+  .mobile-bottom {
+    padding-bottom: 24px !important;
+  }
+
+  .mobile-flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 34px;
   }
 }
 </style>

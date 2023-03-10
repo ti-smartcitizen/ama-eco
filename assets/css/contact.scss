@@ -13,10 +13,27 @@
   input {
     border: 1px solid #c6c9d0 !important;
     border-radius: 12px !important;
+    height: 48px;
+
+    &::placeholder {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #B0B4BD;
+    }
   }
   textarea {
     border: 1px solid #c6c9d0;
     border-radius: 12px;
+
+    &::placeholder {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #B0B4BD;
+      }
   }
   button {
     color: #fff;
@@ -36,4 +53,15 @@
       content: none;
     }
   }
+}
+
+.custom-select {
+  border: 1px solid #c6c9d0;
+  border-radius: 12px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B0B4BD;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div @click="goToTop" id="btn-up" class="btn-up">
+  <div id="btn-up" class="btn-up" @click="goToTop">
     <button>
       <svg
         width="16"

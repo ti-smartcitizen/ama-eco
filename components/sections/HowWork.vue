@@ -10,7 +10,7 @@
         </h1>
       </div>
     </div>
-    <div class="carousel">
+    <div class="carousel pb-5">
       <b-carousel
         id="carousel-fade"
         background="#fff"

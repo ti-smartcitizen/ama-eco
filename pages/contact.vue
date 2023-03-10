@@ -10,7 +10,7 @@
       <div class="container">
         <div class="row py-5">
           <div style="padding: 0 64px" class="col-12 col-lg-5 title-contact">
-            <h1>{{ $store.state.contentSite.contact.title }}</h1>
+            <h1 class="title">{{ $store.state.contentSite.contact.title }}</h1>
             <p class="subtitle">
               {{ $store.state.contentSite.contact.sub_title }}
             </p>
@@ -22,13 +22,13 @@
               />
             </div>
             <div class="d-none d-lg-flex">
-              <p>
+              <p class="address">
                 Rua Bruno Filgueira, 2434 CEP 80.710-530<br />Bigorrilho -
                 Curitiba - Paraná - Brasil
               </p>
             </div>
             <div class="d-none d-lg-flex">
-              <p>CNPJ: 36.208.711/0001-01</p>
+              <p class="address">CNPJ: 36.208.711/0001-01</p>
             </div>
           </div>
           <div style="padding: 0 64px" class="col-12 col-lg-7">
@@ -218,3 +218,30 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  color: #131e3b;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #565e73;
+  max-width: 296px;
+}
+
+.address {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 156%;
+  color: #131e3b;
+}
+</style>

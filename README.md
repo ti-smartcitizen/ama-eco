@@ -10,9 +10,8 @@ BtnUp OK
 
 Gean
 Hero OK
-
-- Intro
-- Programs
-- ODS
-- Social
-  Blog
+Intro OK
+Programs OK
+ODS OK 
+Social OK
+Blog OK

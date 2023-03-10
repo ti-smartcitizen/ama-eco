@@ -19,9 +19,11 @@
                   <span class="mr-3">{{
                     $store.state.contentSite.social.redirect
                   }}</span>
-                  <span class="btn-like">
-                    {{ $store.state.contentSite.social.btn }}
-                  </span>
+                  <a href="https://amafloripa.com.br/" target="_blank">
+                    <span class="btn-like">
+                      {{ $store.state.contentSite.social.btn }}
+                    </span>
+                  </a>
                 </p>
               </div>
             </div>
@@ -33,6 +35,7 @@
                   <div class="post">
                     <div class="post-header">
                       <img class="post-avatar" :src="post.usuario_foto" />
+                      <!-- <img v-else class="post-avatar" src="~/assets/logo.png" /> -->
                       <div>
                         <div class="post-user">{{ post.usuario_nome }}</div>
                         <div class="post-location">
@@ -98,11 +101,13 @@ export default {
       const diffHours = Math.floor(diff / (1000 * 3600))
       const diffMinutes = Math.floor(diff / (1000 * 60))
       if (diffDays > 0) {
-        return `${diffDays} dias atrás`
+        return `${diffDays} ${diffDays === 1 ? 'dia' : 'dias'} atrás`
       } else if (diffHours > 0) {
-        return `${diffHours} horas atrás`
+        return `${diffHours} ${diffHours === 1 ? 'hora' : 'horas'} atrás`
       } else if (diffMinutes > 0) {
-        return `${diffMinutes} minutos atrás`
+        return `${diffMinutes} ${
+          diffMinutes === 1 ? 'minuto' : 'minutos'
+        } atrás`
       } else {
         return 'agora'
       }

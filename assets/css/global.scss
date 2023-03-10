@@ -527,8 +527,8 @@ section {
   }
 
   .borderRight {
-    border-left: 1px solid #bfbfbf;
-    padding-left: 2rem;
+    border-left: 1px solid #DDDEE3;
+    padding-left: 8rem;
     @media (max-width: 992px) {
       border: none;
       padding: 0 !important;
@@ -551,10 +551,13 @@ section {
   select {
     font-family: $serif;
     width: 100%;
-    margin-bottom: 1rem;
-    border-radius: 7px;
-    border: 1px solid #dbdbdb;
+    margin-bottom: 16px;
+    border: 1px solid #C6C9D0;
+    border-radius: 12px;
     padding: 8px 10px;
+    &:focus {
+      outline: 1px solid #5B8899;
+    }
   }
 
   button {

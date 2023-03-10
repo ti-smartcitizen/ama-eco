@@ -39,6 +39,7 @@
         id="carousel-fade"
         class="carousel-header carousel-cards w-100 h-100 d-flex d-lg-none p-2 p-lg-5 pt-5 pb- justify-content-center align-items-center"
         fade
+        indicators
       >
         <b-carousel-slide
           v-for="(item, id) of $store.state.contentSite.home.cards"
