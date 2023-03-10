@@ -114,7 +114,7 @@ export default {
 
 <style scoped lang="scss">
 .social {
-  padding-top: 80px;
+  padding-top: 104px;
   height: 100vh;
 }
 
