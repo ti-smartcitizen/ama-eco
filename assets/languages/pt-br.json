@@ -69,7 +69,7 @@
         "text": "É a Rede Social AMA, com muito conteúdo informativo produzidos pela equipe de  comunicação do AMA e onde os AMAs (Agentes do Meio Ambiente) compartilham suas ações ambientais."
       },
       {
-        "modalText": "Clicando em Ações, o AMA (Agente do Meio Ambiente) terá acesso a cards com sugestões de atividades e pesquisas em que poderá participar. Cada participação rende pontos para um ranking que premia os melhores colocados por ciclos e temporadas, além valores em dinheiro (cashback sutentável) de acordo com a complexidade de cada atividade.",
+        "modalText": "Clicando em Ações, o AMA (Agente do Meio Ambiente) terá acesso a cards com sugestões de atividades e pesquisas em que poderá participar. Cada participação rende pontos para um ranking que premia os melhores colocados por ciclos e temporadas, além de valores em dinheiro (cashback sutentável) de acordo com a complexidade de cada atividade.",
         "modalImg": "modal-2.png",
         "modalSvg": "actions",
         "img": "tarefas-ods.png",
@@ -122,7 +122,7 @@
     },
     "jobs_ods": {
       "title": "Tarefas ODS",
-      "sub_title": "Utilizamos elementos encontrados em jogos para que as atividades ambientais disponíveis aos usuários sejam apresentadas de uma maneira divertida e desafiadora. São criadas para motivar o alcance de objetivos de maneira mais eficaz e prazerosa. Com recursos interativos e gamificados, as atividades tornam-se em algo mais empolgante.",
+      "sub_title": "Utilizamos elementos encontrados em jogos para que as atividades ambientais disponíveis aos usuários sejam apresentadas de uma maneira divertida e desafiadora. São criadas para motivar o alcance de objetivos de maneira mais eficaz e prazerosa. Com recursos interativos e gamificados, as atividades tornam-se algo mais empolgante.",
       "description": "Todas as atividades são inspiradas nos 17 Objetivos de Desenvolvimento Sustentável da ONU e vêm acompanhadas por uma descrição e um card, ou vídeo explicativo, além do valor de pontos e recompensas. Ao compartilhar a realização de uma atividade no Feed, o usuário motiva outros usuários a promoverem a conscientização sobre questões importantes relacionadas ao desenvolvimento sustentável."
     },
     "blog": {

@@ -100,7 +100,7 @@ export default {
       .$get('https://blog.cidadeama.com.br/wp-json/wp/v2/posts')
       .then((res) => {
         res.forEach((item, index) => {
-          if (index < 9) {
+          if (index < 6) {
             this.posts.push({
               ...res[index],
               categoria: null,
@@ -159,7 +159,7 @@ export default {
 }
 
 .blogpost {
-  margin-bottom: 30px;
+  margin: 24px;
   border: 1px solid #eaeaea;
   filter: drop-shadow(0 18px 28px rgba(9, 30, 66, 0.15));
   border-radius: 16px;
@@ -212,6 +212,13 @@ export default {
   font-size: 14px;
   line-height: 20px;
   color: #565e73;
+}
+
+@media (max-width: 1400px) {
+  .posts-container {
+    padding: 0 50px;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 991px) {

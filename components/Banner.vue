@@ -347,5 +347,6 @@ export default {
 
 .banner-container {
   margin: 20px;
+  margin-top: 0;
 }
 </style>

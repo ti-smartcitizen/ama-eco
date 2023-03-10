@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid programas col-xxl-8">
+  <div class="container-fluid programas programs col-xxl-8">
     <div class="row flex-lg-row align-items-stretch h-100">
       <div class="col-12 col-lg-6 order-2 order-lg-1 img-container">
         <img
@@ -88,7 +88,35 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .programs {
+    height: 110vh !important;
+    margin-top: 60px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .sub-title {
+    font-size: 16px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .section-title {
+    font-size: 42px !important;
+  }
+
+  .intro-content {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
 @media (max-width: 991.98px) {
+  .programs {
+    height: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
   .img-container {
     justify-content: center;
 
@@ -97,6 +125,18 @@
       top: 20px;
       width: 88%;
     }
+  }
+
+  .sub-title {
+    font-size: 20px !important;
+  }
+
+  .section-title {
+    font-size: 64px !important;
+  }
+
+  .intro-content {
+    font-size: 18px !important;
   }
 
   .text-container {

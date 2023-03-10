@@ -34,8 +34,14 @@
                 <div v-for="post of posts" :key="post.id">
                   <div class="post">
                     <div class="post-header">
-                      <img class="post-avatar" :src="post.usuario_foto" />
-                      <!-- <img v-else class="post-avatar" src="~/assets/logo.png" /> -->
+                      <img
+                        v-if="post.usuario_foto"
+                        class="post-avatar"
+                        :src="post.usuario_foto"
+                      />
+                      <div v-else class="post-avatar">
+                        {{ getInitials(post.usuario_nome) }}
+                      </div>
                       <div>
                         <div class="post-user">{{ post.usuario_nome }}</div>
                         <div class="post-location">
@@ -93,6 +99,14 @@ export default {
       })
   },
   methods: {
+    getInitials(name) {
+      const names = name.split(' ')
+      if (names.length > 1) {
+        return names[0].charAt(0) + names[1].charAt(0)
+      } else {
+        return names[0].charAt(0)
+      }
+    },
     formatDate(date) {
       const dateNow = new Date()
       const datePost = new Date(date)
@@ -207,9 +221,18 @@ export default {
   &-avatar {
     width: 48px;
     height: 48px;
-    background: #e5e5e5;
+    background: #2157cc;
     border-radius: 12px;
     margin-right: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 132%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
   }
 
   &-user {
@@ -281,12 +304,19 @@ export default {
   background: #b3b3b3;
 }
 
+@media (max-width: 1450px) {
+  .social {
+    margin-bottom: 120px;
+  }
+}
+
 @media (max-width: 992px) {
   .social {
     padding: 32px;
     padding-top: 40px;
     padding-bottom: 40px;
     height: 100%;
+    margin-bottom: 20px;
   }
 
   .mobile-change {

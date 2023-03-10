@@ -16,6 +16,7 @@
         background="#fff"
         class="carousel-header w-100 d-none d-lg-block mb-3"
         fade
+        :interval="10000"
         indicators
       >
         <b-carousel-slide>
@@ -108,6 +109,7 @@
         id="carousel-fade"
         class="carousel-header d-block d-lg-none"
         fade
+        :interval="10000"
         indicators
       >
         <b-carousel-slide>

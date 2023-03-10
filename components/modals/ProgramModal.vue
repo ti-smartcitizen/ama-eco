@@ -99,6 +99,26 @@ export default {
   height: 840px;
 }
 
+@media (max-width: 1450px) {
+  .main-img-1 {
+    height: 600px;
+    top: -140px;
+    left: -90px;
+  }
+
+  .main-img-2 {
+    top: -150px;
+    left: -20px;
+    height: 600px;
+  }
+
+  .main-img-3 {
+    top: -150px;
+    left: -80px;
+    height: 600px;
+  }
+}
+
 .title {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
