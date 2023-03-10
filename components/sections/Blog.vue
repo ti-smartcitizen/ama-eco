@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="container blog pt-5">
-      <div class="row mb-5">
-        <div class="col-12 py-3 text-center">
+      <div class="row mb-3">
+        <div class="col-12 pt-3 text-center">
           <div class="mx-5 blog-title">
             {{ $store.state.contentSite.home.blog.title }}
           </div>
@@ -17,55 +17,51 @@
               loading="lazy"
             />
 
-            <div class="p-2 pb-1 pt-0">
-              <div class="card-body">
-                <div class="card-date mb-1">
-                  {{ dataAtualFormatada(item.date) }}
-                </div>
-                <div class="card-category mb-3">{{ item.categoria }}</div>
-                <div class="card-title mb-3">
-                  <a :href="item.link" target="_blank">{{
-                    item.title.rendered
-                  }}</a>
-                </div>
-                <div class="d-flex">
-                  <div
-                    class="card-content"
-                    v-html="
-                      item.excerpt.rendered.length > 90
-                        ? item.excerpt.rendered.substring(0, 90) + '...'
-                        : item.excerpt.rendered
-                    "
-                  ></div>
+            <div class="card-body">
+              <div class="card-date mb-1">
+                {{ dataAtualFormatada(item.date) }}
+              </div>
+              <div class="card-category mb-3">{{ item.categoria }}</div>
+              <div class="card-title mb-3">
+                <a :href="item.link" target="_blank">{{
+                  item.title.rendered
+                }}</a>
+              </div>
+              <div class="d-flex">
+                <div
+                  class="card-content"
+                  v-html="
+                    item.excerpt.rendered.length > 90
+                      ? item.excerpt.rendered.substring(0, 90) + '...'
+                      : item.excerpt.rendered
+                  "
+                ></div>
 
-                  <div
-                    class="d-flex justify-content-right align-items-end mb-3 ml-1"
-                  >
-                    <a :href="item.link" target="_blank"
-                      ><svg
-                        width="34"
-                        height="34"
-                        viewBox="0 0 34 34"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17.9766 16.9996L13.8516 12.8746L15.0299 11.6963L20.3332 16.9996L15.0299 22.303L13.8516 21.1246L17.9766 16.9996Z"
-                          fill="#131E3B"
-                        />
-                        <rect
-                          x="1"
-                          y="1"
-                          width="32"
-                          height="32"
-                          rx="6"
-                          stroke="#DDDEE3"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </a>
-                  </div>
+                <div class="d-flex justify-content-right align-items-end mb-3">
+                  <a :href="item.link" target="_blank"
+                    ><svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.9766 16.9996L13.8516 12.8746L15.0299 11.6963L20.3332 16.9996L15.0299 22.303L13.8516 21.1246L17.9766 16.9996Z"
+                        fill="#131E3B"
+                      />
+                      <rect
+                        x="1"
+                        y="1"
+                        width="32"
+                        height="32"
+                        rx="6"
+                        stroke="#DDDEE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -75,7 +71,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center mt-3 mb-5">
+        <div class="col-12 text-center mt-5 mb-5">
           <a
             href="https://blog.cidadeama.com.br/"
             target="_blank"
@@ -155,11 +151,11 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 0 170px;
+  padding: 0 205px;
 }
 
 .blogpost {
-  margin: 24px;
+  margin: 12px;
   border: 1px solid #eaeaea;
   filter: drop-shadow(0 18px 28px rgba(9, 30, 66, 0.15));
   border-radius: 16px;
@@ -221,14 +217,16 @@ export default {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .posts-container {
-    padding: 0 50px;
+    padding: 0;
+    padding-right: 24px;
     justify-content: center;
   }
 
   .blogpost {
-    width: 320px;
+    width: 100% !important;
+    margin-bottom: 24px;
   }
 }
 </style>

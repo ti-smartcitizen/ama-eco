@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div>
-      <Header />
-      <Hero />
-    </div>
+    <Header />
+    <Hero />
     <main>
       <Intro id="about" />
       <Programs id="platform" />

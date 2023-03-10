@@ -55,9 +55,8 @@
     "about": {
       "sub": "About",
       "title": "Hello, we're <br /> AMA!",
-      "desc1": "We form a collaborative network that multiplies sustainable behavior. We know that big changes start with small attitudes, and it is inside our homes that care appears first.",
-      "desc2": "We do not stop there! What we really want is to see as many people as possible engaged in the cause with us. Let's take care of our court, our surroundings, and if we get people to do the same, we can impact our whole city.",
-      "desc3": "We know we can't control the climate, but we can control our choices. Every action we take to reduce CO2 emissions is an important step towards achieving real change."
+      "desc1": "We build a cooperative network that spreads sustainable behavior. We know that minor changes in attitudes may lead to major improvements, and that environmental stewardship begins at home.",
+      "desc2": "Beyond the maintenance of our neighborhoods, courts, and towns, our objective is to engage as many people as possible in lowering CO2 emissions and developing sustainable attitudes. We think that only by working together can we create significant and long-term change."
     },
     "cards": [
       {
@@ -122,8 +121,10 @@
     },
     "jobs_ods": {
       "title": "SDG TASKS",
-      "sub_title": "We use elements found in games so that the environmental activities available to users are presented in a fun and challenging way. They are created to motivate the achievement of goals in a more effective and enjoyable way. With interactive and gamified features, the activities become more exciting and even addictive.",
-      "description": "All activities are inspired by the 17 UN Sustainable Development Goals and are accompanied by a description and an explanatory card, or video, as well as the value of points and rewards. By sharing the completion of an activity in the Feed, the user motivates other users to raise awareness about important issues related to sustainable development."
+      "subtitle": "Our proposal is to educate, connect, and reward people to collaborate in the management of urban environmental problems.",
+      "description1": "Education is done through activities, based on the UN's 17 Sustainable Development Goals, that promote awareness. ",
+      "description2": "The connection is made by sharing these activities on our social network, as well as through institutional posts created to educate the population about environmental issues. The intention is to impact and encourage as many people as possible to participate.",
+      "description3": "Finally, the reward is done in two ways: the first with the incentive of sustainable cashback, which can be used in services of local companies in our commercial network or in the digital account; the second, in the form of points, which is used in a healthy competition with seasons and cycles that give prizes to the best placed in each of them."
     },
     "blog": {
       "title": "AMA Blog",

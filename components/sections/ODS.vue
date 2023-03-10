@@ -12,11 +12,17 @@
             <div class="ods-title mt-4">
               {{ $store.state.contentSite.home.jobs_ods.title }}
             </div>
-            <div class="ods-text">
-              {{ $store.state.contentSite.home.jobs_ods.sub_title }}
+            <div class="ods-subtitle">
+              {{ $store.state.contentSite.home.jobs_ods.subtitle }}
             </div>
             <div class="ods-text">
-              {{ $store.state.contentSite.home.jobs_ods.description }}
+              {{ $store.state.contentSite.home.jobs_ods.description1 }}
+            </div>
+            <div class="ods-text">
+              {{ $store.state.contentSite.home.jobs_ods.description2 }}
+            </div>
+            <div class="ods-text">
+              {{ $store.state.contentSite.home.jobs_ods.description3 }}
             </div>
           </div>
         </div>
@@ -36,24 +42,34 @@ export default {}
   font-size: 64px;
   line-height: 100%;
   color: #fff;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .ods-text {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   color: #fff;
   max-width: 526px;
   margin-bottom: 24px;
 }
 
+.ods-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 132%;
+  color: #fff;
+  max-width: 526px;
+  margin-bottom: 32px;
+}
+
 @media (max-width: 991px) {
   .tarefasODS {
     padding: 32px;
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 120px;
   }
 }
 </style>

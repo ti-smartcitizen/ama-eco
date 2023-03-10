@@ -1,8 +1,5 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'AMA | Agentes do Meio Ambiente',
     meta: [
@@ -12,7 +9,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Uma rede social que conecta pessoas interessadas no compromisso global de desenvolvimento sustentável',
+          'Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. A rede social AMA conecta, educa, conscientiza e engaja os moradores a adotarem comportamentos mais sustentáveis em seu dia a dia.',
       },
       { hid: 'og:image', name: 'og:image', content: '/favicon.ico' },
       { name: 'format-detection', content: 'telephone=no' },
@@ -21,20 +18,18 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400;500;700;800;900&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700;800;900&display=swap',
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap',
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800;900&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap',
       },
     ],
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/base.css',
     '~/assets/css/global.scss',
@@ -44,49 +39,20 @@ export default {
     '~/assets/css/contact.scss',
     '~/assets/css/howWork.scss',
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    { src: '~/plugins/google-maps', ssr: true },
-    { src: '~/plugins/vue-the-mask' },
-    { src: '~/plugins/vue-gtag' },
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  plugins: [{ src: '~/plugins/vue-the-mask' }, { src: '~/plugins/vue-gtag' }],
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
-    [
-      'nuxt-cookie-control',
-      {
-        // your options
-      },
-    ],
-    'nuxt-vuex-localstorage', //
+    ['@nuxtjs/pwa', { workbox: false }],
+    ['nuxt-cookie-control', {}],
+    'nuxt-vuex-localstorage',
   ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
   bootstrapVue: {
     icons: true,
   },
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
       lang: 'pt-BR',
@@ -96,11 +62,7 @@ export default {
       mobileAppIOS: true,
     },
   },
-
-  router: {
-    // base: '/new/',
-  },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  router: {},
   build: {
     transpile: [/^vue2-google-maps($|\/)/],
     babel: {

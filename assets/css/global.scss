@@ -81,7 +81,7 @@ $spaceUnit: 4px;
   }
 
   .tarefasODS {
-    height: 100vh !important;
+    height: fit-content !important;
   }
 }
 
@@ -125,7 +125,7 @@ $spaceUnit: 4px;
   }
 
   .tarefasODS {
-    min-height: 100vh !important;
+    min-height: 110vh !important;
     height: initial !important;
     display: block !important;
     .bgVerde {
@@ -291,7 +291,8 @@ main {
 
 .tarefasODS {
   background: url('~/assets/ods/ods.png') repeat-x center top;
-  height: 100vh;
+  background-size: cover;
+  height: 110vh;
   font-family: $sans-serif;
 
   h1 {
@@ -476,7 +477,7 @@ section {
 .steps,
 .programas,
 .tarefasODS {
-  height: 100vh;
+  height: 110vh;
 }
 
 .contato {

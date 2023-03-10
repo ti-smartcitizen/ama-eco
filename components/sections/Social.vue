@@ -134,7 +134,8 @@ export default {
 <style scoped lang="scss">
 .social {
   padding-top: 104px;
-  height: 100vh;
+  padding-bottom: 48px;
+  height: 100%;
 }
 
 .sub-title {
@@ -306,7 +307,7 @@ export default {
 
 @media (max-width: 1450px) {
   .social {
-    margin-bottom: 120px;
+    margin-bottom: 24px;
   }
 }
 
@@ -314,7 +315,7 @@ export default {
   .social {
     padding: 32px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     height: 100%;
     margin-bottom: 20px;
   }

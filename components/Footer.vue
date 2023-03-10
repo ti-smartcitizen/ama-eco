@@ -242,7 +242,7 @@ export default {}
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .logo-container {
     justify-content: center;
   }

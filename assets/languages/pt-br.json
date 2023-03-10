@@ -55,9 +55,8 @@
     "about": {
       "sub": "Sobre",
       "title": "Olá, somos o <br /> AMA!",
-      "desc1": "Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. Sabemos que grandes mudanças começam com pequenas atitudes e é dentro da nossa casa que o cuidado aparece primeiro.",
-      "desc2": "Não paramos por aí! O que gente quer mesmo, é ver o maior número de pessoas engajadas na causa conosco. Vamos cuidar da nossa quadra, dos nossos arredores e se conseguirmos as pessoas a fazerem o mesmo, podemos impactar toda a nossa cidade.",
-      "desc3": "Sabemos que não podemos controlar o clima, mas podemos controlar nossas escolhas. Cada ação que tomamos para reduzir as emissões de CO2 é um passo importante para conseguirmos alcançar uma real mudança."
+      "desc1": "Formamos uma rede colaborativa que multiplica comportamentos sustentáveis. Sabemos que pequenas atitudes podem gerar grandes mudanças e que o cuidado com o meio ambiente começa em nossa própria casa.",
+      "desc2": "Nosso objetivo é engajar o maior número possível de pessoas na redução das emissões de Co2 além dos cuidados de nossas comunidades, quadras e cidades, incentivando atitudes sustentáveis. Acreditamos que somente quando agimos juntos podemos alcançar uma mudança real e duradoura."
     },
     "cards": [
       {
@@ -122,8 +121,10 @@
     },
     "jobs_ods": {
       "title": "Tarefas ODS",
-      "sub_title": "Utilizamos elementos encontrados em jogos para que as atividades ambientais disponíveis aos usuários sejam apresentadas de uma maneira divertida e desafiadora. São criadas para motivar o alcance de objetivos de maneira mais eficaz e prazerosa. Com recursos interativos e gamificados, as atividades tornam-se algo mais empolgante.",
-      "description": "Todas as atividades são inspiradas nos 17 Objetivos de Desenvolvimento Sustentável da ONU e vêm acompanhadas por uma descrição e um card, ou vídeo explicativo, além do valor de pontos e recompensas. Ao compartilhar a realização de uma atividade no Feed, o usuário motiva outros usuários a promoverem a conscientização sobre questões importantes relacionadas ao desenvolvimento sustentável."
+      "subtitle": "Nossa proposta consiste em educar, conectar e recompensar as pessoas a colaborarem na gestão dos problemas ambientais urbanos.",
+      "description1": "A educação é feita através de atividades, baseadas nos 17 Objetivos de Desenvolvimento Sustentável da ONU, que promovem a conscientização. ",
+      "description2": "A conexão se dá a partir do compartilhamento dessas atividades em nossa rede social, assim como através dos posts institucionais criados para educar a população sobre questões ambientais. O intuito é impactar e incentivar o máximo de pessoas a participarem.",
+      "description3": "Por fim, a recompensa é feita de duas formas: a primeira com o incentivo de cashback sustentável, que pode ser utilizado em serviços de empresas locais em nossa rede comercial ou na conta digital; a segunda, em forma de pontuação, que é utilizada em uma competição saudável com temporadas e ciclos que dão prêmios para os melhores colocados em cada uma delas."
     },
     "blog": {
       "title": "AMA Blog",

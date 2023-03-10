@@ -28,10 +28,6 @@
             class="intro-content"
             v-html="$store.state.contentSite.home.about.desc2"
           ></p>
-          <p
-            class="intro-content"
-            v-html="$store.state.contentSite.home.about.desc3"
-          ></p>
         </div>
       </div>
     </div>
@@ -50,7 +46,7 @@
   .intro-img {
     width: 72%;
     right: 0;
-    top: 11%;
+    top: 17%;
     position: absolute;
   }
 }
@@ -91,13 +87,12 @@
 @media (max-width: 1450px) {
   .programs {
     height: 110vh !important;
-    margin-top: 60px !important;
+    margin-top: 24px !important;
     margin-bottom: 0 !important;
   }
 
   .sub-title {
     font-size: 16px !important;
-    margin-bottom: 6px !important;
   }
 
   .section-title {
@@ -106,7 +101,7 @@
 
   .intro-content {
     font-size: 16px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 16px !important;
   }
 }
 
