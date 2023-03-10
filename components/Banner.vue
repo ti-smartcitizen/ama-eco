@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="banner-container">
     <div class="d-none d-lg-flex d-xl-flex d-xxl-flex banner-wrapper">
       <img
         class="banner-image"
@@ -247,7 +247,7 @@ export default {
 }
 
 .banner-wrapper-mobile {
-  padding: 32px;
+  padding: 40px;
   padding-bottom: 0;
   display: flex;
   flex-direction: column-reverse;
@@ -342,5 +342,9 @@ export default {
       }
     }
   }
+}
+
+.banner-container {
+  margin: 20px;
 }
 </style>

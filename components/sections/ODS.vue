@@ -52,6 +52,8 @@ export default {}
 @media (max-width: 991px) {
   .tarefasODS {
     padding: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 </style>

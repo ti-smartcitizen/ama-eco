@@ -155,7 +155,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 0 150px;
+  padding: 0 170px;
 }
 
 .blogpost {
@@ -221,7 +221,7 @@ export default {
   }
 
   .blogpost {
-    width: 100%;
+    width: 320px;
   }
 }
 </style>

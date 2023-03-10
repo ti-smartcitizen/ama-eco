@@ -12,7 +12,7 @@
       <ODS />
       <Social id="social-network" />
       <div
-        class="banner d-lg-flex d-xxl-flex justify-content-center px-2 px-lg-5 px-xxl-5 py-5"
+        class="banner d-lg-flex d-xxl-flex justify-content-center px-2 px-lg-5 px-xxl-5 pb-4"
       >
         <Banner />
       </div>
