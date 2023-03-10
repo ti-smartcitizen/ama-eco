@@ -84,10 +84,17 @@ export default {
         svg: '',
         img: '',
       },
+      sound: null,
     }
+  },
+  mounted() {
+    this.sound = new Audio(
+      '~assets/sounds/navigation_forward-selection-minimal.mp3'
+    )
   },
   methods: {
     openModal(item) {
+      this.sound.play()
       this.modalType = {
         title: item.title,
         text: item.modalText,
