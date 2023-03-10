@@ -159,6 +159,7 @@ export default {
   min-height: 416px;
   max-width: 1300px;
   margin-top: 60px;
+
   .banner-image {
     position: absolute;
     bottom: 0;

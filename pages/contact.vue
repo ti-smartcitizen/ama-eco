@@ -9,7 +9,7 @@
       </div>
       <div class="container">
         <div class="row py-5">
-          <div style="padding: 0 64px" class="col-12 col-lg-5">
+          <div style="padding: 0 64px" class="col-12 col-lg-5 title-contact">
             <h1>{{ $store.state.contentSite.contact.title }}</h1>
             <p class="subtitle">
               {{ $store.state.contentSite.contact.sub_title }}
@@ -93,8 +93,8 @@
               >
               <textarea
                 id="message"
-                :placeholder="$store.state.contentSite.contact.message"
                 v-model="message"
+                :placeholder="$store.state.contentSite.contact.message"
                 name="message"
                 cols="30"
                 rows="10"
