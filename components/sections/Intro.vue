@@ -3,7 +3,7 @@
     <div class="row flex-lg-row align-items-stretch h-100">
       <div class="col-12 col-lg-6 order-2 order-lg-1 img-container">
         <img
-          src="~/assets/intro.png"
+          src="~/assets/intro/intro.png"
           class="d-block intro-img mw-100"
           loading="lazy"
         />

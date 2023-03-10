@@ -56,6 +56,9 @@ $img-shadow: 1px 55px 80px -40px rgba(56, 67, 63, 0.45);
 $spaceUnit: 4px;
 
 header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
   nav {
     // position: absolute;
     // height: 120px;

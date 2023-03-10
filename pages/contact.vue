@@ -4,7 +4,7 @@
     <main class="contato">
       <div class="container-fluid">
         <div class="row">
-          <img src="~/assets/contact-slide.jpg" class="w-100" alt="" />
+          <img src="~/assets/contact/contact-slide.jpg" class="w-100" alt="" />
         </div>
       </div>
       <div class="container">
@@ -114,7 +114,7 @@
                 {{ $store.state.contentSite.contact.send }}
                 <span v-if="loading">
                   <img
-                    src="~/assets/loading.gif"
+                    src="~/assets/contact/loading.gif"
                     height="16"
                     width="16"
                     alt=""

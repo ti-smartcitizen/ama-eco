@@ -6,7 +6,7 @@
           class="row justify-content-center align-items-lg-center h-100 bgVerde"
         >
           <div class="d-lg-flex col-12 col-lg-6">
-            <img class="img-fluid" src="~/assets/ods-phone.png" alt="" />
+            <img class="img-fluid" src="~/assets/ods/ods-phone.png" alt="" />
           </div>
           <div class="col-12 col-lg-6">
             <div class="ods-title mt-4">
